@@ -1,0 +1,304 @@
+----------Exercice 1:
+
+-----Q1. 
+
+- UDPServer.py: 
+from socket import *
+
+serverPort = 1234
+serverSocket = socket(AF_INET,SOCK_DGRAM)
+serverSocket.bind(('',serverPort))
+print('Server ready')
+while True:
+    message, clientAddress = serverSocket.recvfrom(2048)
+    modifiedMessage = message.decode('utf-8').upper()
+    serverSocket.sendto(modifiedMessage.encode('utf-8'),clientAddress)
+    print(modifiedMessage)
+
+- UDPClient.py:
+from socket import *
+
+serverName = '127.0.0.1'
+serverPort = 1234
+clientSocket = socket(AF_INET,SOCK_DGRAM)
+message = input('Message to send: ').encode('utf-8')
+clientSocket.sendto(message,(serverName,serverPort))
+modifiedMessage, serverAddress = clientSocket.recvfrom(2048)
+print(modifiedMessage.decode('utf-8'))
+clientSocket.close()
+
+-----Q3
+
+- UDPClient.py:
+from socket import *
+
+serverName = '127.0.0.1'
+serverPort = 1234
+clientSocket = socket(AF_INET,SOCK_DGRAM)
+clientSocket.settimeout(3)
+while True:
+	message = input('Message: ').encode('utf-8')
+	if message.decode('utf-8') == "quit": #Entrer quit pour quitter le client
+		break
+	clientSocket.sendto(message,(serverName,serverPort))
+	modifiedMessage, serverAddress = clientSocket.recvfrom(2048)
+	print(modifiedMessage.decode('utf-8'))
+		
+clientSocket.close()
+
+-----Q4.
+
+- UDPServer.py:
+from socket import *
+import random
+
+serverPort = 1234
+serverSocket = socket(AF_INET,SOCK_DGRAM)
+serverSocket.bind(('',serverPort))
+print('Server ready')
+while True:
+	message, clientAddress = serverSocket.recvfrom(2048)
+	modifiedMessage = message.decode('utf-8').upper()	
+	if random.randint(1,100) > 50:
+		serverSocket.sendto(modifiedMessage.encode('utf-8'),clientAddress)
+	print(modifiedMessage)
+
+#Si le serveur se trouve dans la probabilité de ne pas répondre au client, le client reste bloqué dans l'attente d'une réponse.
+
+- UDPClient.py:
+from socket import *
+
+serverName = '127.0.0.1'
+serverPort = 1234
+clientSocket = socket(AF_INET,SOCK_DGRAM)
+clientSocket.settimeout(3)
+retry = False #Booleen indiquant s'il faut renvoyer le message au serveur si le client ne recoit pas de reponse
+while True:
+	try:
+		if not retry:
+			message = input('Message: ').encode('utf-8')
+		if message.decode('utf-8') == "quit": #Entrer quit pour quitter le client
+			break
+		clientSocket.sendto(message,(serverName,serverPort))
+		modifiedMessage, serverAddress = clientSocket.recvfrom(2048)
+		print(modifiedMessage.decode('utf-8'))
+		retry = False
+	except Exception as exc:
+		print("timeout")
+		retry = True
+		
+clientSocket.close()
+
+
+----------Exercice 2:
+URL : 127.0.0.1:1234/requete1.txt
+
+- TCPClient.py:
+from socket import *
+
+serverName = '127.0.0.1'
+serverPort = 1234
+clientSocket = socket(AF_INET,SOCK_STREAM)
+clientSocket.connect((serverName,serverPort))
+message = input('Message: ').encode('utf-8')
+clientSocket.send(message)
+modifiedMessage = clientSocket.recv(2048)
+print(modifiedMessage.decode('utf-8'))
+clientSocket.close()
+
+- TCPServer.py:
+from socket import *
+
+serverPort = 1234
+serverSocket = socket(AF_INET,SOCK_STREAM)
+serverSocket.setsockopt(SOL_SOCKET, SO_REUSEADDR, 1)
+serverSocket.bind(('',serverPort))
+serverSocket.listen(1)
+print('Server ready')
+while True:
+	connectionSocket, address = serverSocket.accept()
+	messageClient = connectionSocket.recv(2048)
+	message = messageClient.decode('utf-8')
+	if message[0:4] != 'GET ':
+		print('400 Bad Request\n')
+		connectionSocket.send('HTTP 400 Bad Request'.encode('utf-8'))
+	else:
+		messageSplitted = message.split(' ')
+		if len(messageSplitted) < 3:
+			connectionSocket.send('HTTP 400 Bad Request'.encode('utf-8'))
+			continue;
+		else:
+			print(messageSplitted) #DEBUG
+			try:
+				files = open(messageSplitted[1][1:], 'r')
+				lines = files.readlines()
+				response = messageSplitted[2][0:8] + ' 200 OK\n'
+				for line in lines:
+					response = response + line
+				connectionSocket.send(response.encode('utf-8'))
+				print('\n'+response+'\n')
+				files.close()
+			except Exception as exc:
+				response = messageSplitted[2][0:8] + ' 404 Not Found\n'
+				connectionSocket.send(response.encode('utf-8'))
+				print('\n'+response+'\n')
+			finally:
+				connectionSocket.close()
+
+- TCPServer-Thread.py: #Requêtes simultanées possibles
+from socket import *
+import _thread
+
+def handle_message(connectionSocket):
+	messageClient = connectionSocket.recv(2048)
+	message = messageClient.decode('utf-8')
+	if message[0:4] != 'GET ':
+		print('400 Bad Request\n')
+		connectionSocket.send('HTTP 400 Bad Request'.encode('utf-8'))
+	else:
+		messageSplitted = message.split(' ')
+		if len(messageSplitted) < 3:
+			connectionSocket.send('HTTP 400 Bad Request'.encode('utf-8'))
+		else:
+			print(messageSplitted) #DEBUG
+			try:
+				files = open(messageSplitted[1][1:], 'r')
+				lines = files.readlines()
+				response = messageSplitted[2][0:8] + ' 200 OK\n'
+				for line in lines:
+					response = response + line
+				connectionSocket.send(response.encode('utf-8'))
+				print('\n'+response+'\n')
+				files.close()
+			except Exception as exc:
+				response = messageSplitted[2][0:8] + ' 404 Not Found\n'
+				connectionSocket.send(response.encode('utf-8'))
+				print('\n'+response+'\n')
+			finally:
+				connectionSocket.close()
+	return None
+
+serverPort = 1234
+serverSocket = socket(AF_INET,SOCK_STREAM)
+serverSocket.setsockopt(SOL_SOCKET, SO_REUSEADDR, 1)
+serverSocket.bind(('',serverPort))
+serverSocket.listen(1)
+print('Server ready')
+while True:
+	connectionSocket, address = serverSocket.accept()
+	_thread.start_new_thread(handle_message, (connectionSocket,))
+
+
+----------Exercice 2:
+
+- UDPClientEx3.py :
+from socket import *
+
+serverName = '127.0.0.1'
+serverPort = 1234
+clientSocket = socket(AF_INET,SOCK_DGRAM)
+clientSocket.settimeout(3)
+retry = False #Booleen indiquant s'il faut renvoyer le message au serveur si le client ne recoit pas de reponse
+while True:
+	try:
+		if not retry:
+			message = input('Message: ').encode('utf-8')
+		if message.decode('utf-8') == "quit": #Entrer quit pour quitter le client
+			break
+		clientSocket.sendto(message,(serverName,serverPort))
+		try:	
+			modifiedMessage, serverAddress = clientSocket.recvfrom(2048)
+			number_packet = int(modifiedMessage) #Récupère le nombre de paquets
+			print(modifiedMessage.decode('utf-8'))
+			while number_packet > 0:
+				print('New packet: ')
+				packet, serverAddress = clientSocket.recvfrom(2048)
+				print(packet.decode('utf-8')) #Affiche les paquets
+				number_packet -=1
+		except Exception as exc:
+			print(modifiedMessage.decode('utf-8'))
+		retry = False
+	except Exception as exc:
+		print("timeout")
+		retry = True
+		
+clientSocket.close()
+
+- UDPServerEx3.py: #Q4 partiellement réalisée
+from socket import *
+import random
+
+def send_message(message, clientAddress):
+	serverSocket.sendto(message.encode('utf-8'), clientAddress)
+	return None
+	
+def send_chance(chance):
+	if random.randint(1,100) > chance:
+		return 1
+	else:
+		return 0
+	
+def handle_message():
+	message, clientAddress = serverSocket.recvfrom(2048)
+	messageClient = message.decode('utf-8')
+	if messageClient[0:4] != 'GET ':
+		print('Wrong header, must start with GET')
+		if send_chance(50):
+			send_message('Wrong header, must start with GET', clientAddress)
+	elif messageClient[len(messageClient)-8:len(messageClient)] != r'\r\n\r\n':
+		print(r"Wrong header, must end with \r\n\r\n")
+		if send_chance(50):
+			send_message(r'Wrong header, must end with \r\n\r\n', clientAddress)
+	else:
+		try:
+			print(messageClient[4:len(messageClient)-8])
+			files = open(messageClient[4:len(messageClient)-8],'r')
+			lines = files.readlines()
+			
+			filesize = 0
+			response = ''
+			
+			listResponse = []
+			cpt = 0
+			for line in lines:
+				#print(len(line.encode('utf-8'))) #DEBUG
+				if cpt+1 == len(lines):
+					if filesize + len(line.encode('utf-8')) <= 251:
+						response += line
+						listResponse.append(response)
+					else:
+						listResponse.append(response)
+						response = line
+						listResponse.append(response)
+					break
+				if filesize + len(line.encode('utf-8')) <= 251:
+					filesize += len(line.encode('utf-8'))
+					response += line
+				else:
+					#print(filesize) #DEBUG
+					listResponse.append(response)
+					filesize = 0
+					response = ''
+				cpt += 1
+			#print(listResponse) #DEBUG
+			#print('File size: ', end='')
+			#print(filesize)
+			if (cpt==0):
+				send_message(str(len(listResponse)),clientAddress) #Envoie le nombre de paquet au client
+			else:
+				send_message(str(len(listResponse)),clientAddress)
+			for response in listResponse:
+				send_message(response,clientAddress)
+			files.close()
+		except Exception as exc:
+			print('File not existing')
+			send_message('File not existing',clientAddress)
+		print(messageClient)
+	
+
+serverPort = 1234
+serverSocket = socket(AF_INET,SOCK_DGRAM)
+serverSocket.bind(('',serverPort))
+print('Server ready')
+while True:
+	handle_message()

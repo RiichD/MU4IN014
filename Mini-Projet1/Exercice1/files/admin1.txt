@@ -1,0 +1,6 @@
+*Fichier administrateur*
+
+Accessibles uniquement
+pour les administrateurs
+
+WARNING !! A Protéger contre les users et modérateurs

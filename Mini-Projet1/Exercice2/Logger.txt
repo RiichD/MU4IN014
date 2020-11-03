@@ -1,0 +1,62 @@
+TIME: 2020-11-03 10:54:00.260344
+b'GET / HTTP/1.1\r\nHost: 127.0.0.1:1234\r\nUser-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:82.0) Gecko/20100101 Firefox/82.0\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8\r\nAccept-Language: fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3\r\nAccept-Encoding: gzip, deflate\r\nDNT: 1\r\nConnection: keep-alive\r\nUpgrade-Insecure-Requests: 1\r\nIf-Modified-Since: Sat, 24 Oct 2020 20:13:09 GMT\r\nIf-None-Match: "2aa6-5b270536f8785-gzip"\r\nCache-Control: max-age=0\r\n\r\n'
+		
+b'HTTP/1.1 200 OK\r\nDate: Tue, 03 Nov 2020 09:54:00 GMT\r\nServer: Apache/2.4.29 (Ubuntu)\r\nLast-Modified: Sat, 24 Oct 2020 20:13:09 GMT\r\nETag: "2aa6-5b270536f8785-gzip"\r\nAccept-Ranges: bytes\r\nVary: Accept-Encoding\r\nContent-Encoding: gzip\r\nContent-Length: 3138\r\nKeep-Alive: timeout=5, max=100\r\nConnection: Keep-Alive\r\nContent-Type: text/html'
+		
+TIME: 2020-11-03 10:54:00.302821
+b'GET /icons/ubuntu-logo.png HTTP/1.1\r\nHost: 127.0.0.1:1234\r\nUser-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:82.0) Gecko/20100101 Firefox/82.0\r\nAccept: image/webp,*/*\r\nAccept-Language: fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3\r\nAccept-Encoding: gzip, deflate\r\nDNT: 1\r\nConnection: keep-alive\r\nReferer: http://127.0.0.1:1234/\r\nIf-Modified-Since: Wed, 12 Aug 2020 21:33:25 GMT\r\nIf-None-Match: "d0a-5acb4f00c9340"\r\nCache-Control: max-age=0\r\n\r\n'
+		
+b'HTTP/1.1 304 Not Modified\r\nDate: Tue, 03 Nov 2020 09:54:00 GMT\r\nServer: Apache/2.4.29 (Ubuntu)\r\nConnection: Keep-Alive\r\nKeep-Alive: timeout=5, max=100\r\nETag: "d0a-5acb4f00c9340"'
+		
+TIME: 2020-11-03 10:54:05.903992
+b'GET /files HTTP/1.1\r\nHost: 127.0.0.1:1234\r\nUser-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:82.0) Gecko/20100101 Firefox/82.0\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8\r\nAccept-Language: fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3\r\nAccept-Encoding: gzip, deflate\r\nDNT: 1\r\nConnection: keep-alive\r\nUpgrade-Insecure-Requests: 1\r\n\r\n'
+		
+b'HTTP/1.1 301 Moved Permanently\r\nDate: Tue, 03 Nov 2020 09:54:05 GMT\r\nServer: Apache/2.4.29 (Ubuntu)\r\nLocation: http://127.0.0.1:1234/files/\r\nContent-Length: 313\r\nKeep-Alive: timeout=5, max=100\r\nConnection: Keep-Alive\r\nContent-Type: text/html; charset=iso-8859-1'
+		
+TIME: 2020-11-03 10:54:05.910794
+b'GET /files/ HTTP/1.1\r\nHost: 127.0.0.1:1234\r\nUser-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:82.0) Gecko/20100101 Firefox/82.0\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8\r\nAccept-Language: fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3\r\nAccept-Encoding: gzip, deflate\r\nDNT: 1\r\nConnection: keep-alive\r\nUpgrade-Insecure-Requests: 1\r\n\r\n'
+		
+b'HTTP/1.1 200 OK\r\nDate: Tue, 03 Nov 2020 09:54:05 GMT\r\nServer: Apache/2.4.29 (Ubuntu)\r\nVary: Accept-Encoding\r\nContent-Encoding: gzip\r\nContent-Length: 666\r\nKeep-Alive: timeout=5, max=100\r\nConnection: Keep-Alive\r\nContent-Type: text/html;charset=UTF-8'
+		
+TIME: 2020-11-03 10:54:05.983097
+b'GET /icons/back.gif HTTP/1.1\r\nHost: 127.0.0.1:1234\r\nUser-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:82.0) Gecko/20100101 Firefox/82.0\r\nAccept: image/webp,*/*\r\nAccept-Language: fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3\r\nAccept-Encoding: gzip, deflate\r\nDNT: 1\r\nConnection: keep-alive\r\nReferer: http://127.0.0.1:1234/files/\r\n\r\n'
+		
+b'HTTP/1.1 200 OK\r\nDate: Tue, 03 Nov 2020 09:54:05 GMT\r\nServer: Apache/2.4.29 (Ubuntu)\r\nLast-Modified: Sat, 20 Nov 2004 20:16:24 GMT\r\nETag: "d8-3e9564c23b600"\r\nAccept-Ranges: bytes\r\nContent-Length: 216\r\nKeep-Alive: timeout=5, max=100\r\nConnection: Keep-Alive\r\nContent-Type: image/gif'
+		
+TIME: 2020-11-03 10:54:05.985473
+b'GET /icons/layout.gif HTTP/1.1\r\nHost: 127.0.0.1:1234\r\nUser-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:82.0) Gecko/20100101 Firefox/82.0\r\nAccept: image/webp,*/*\r\nAccept-Language: fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3\r\nAccept-Encoding: gzip, deflate\r\nDNT: 1\r\nConnection: keep-alive\r\nReferer: http://127.0.0.1:1234/files/\r\n\r\n'
+		
+b'HTTP/1.1 200 OK\r\nDate: Tue, 03 Nov 2020 09:54:05 GMT\r\nServer: Apache/2.4.29 (Ubuntu)\r\nLast-Modified: Sat, 20 Nov 2004 20:16:24 GMT\r\nETag: "114-3e9564c23b600"\r\nAccept-Ranges: bytes\r\nContent-Length: 276\r\nKeep-Alive: timeout=5, max=100\r\nConnection: Keep-Alive\r\nContent-Type: image/gif'
+		
+TIME: 2020-11-03 10:54:05.987329
+b'GET /icons/image2.gif HTTP/1.1\r\nHost: 127.0.0.1:1234\r\nUser-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:82.0) Gecko/20100101 Firefox/82.0\r\nAccept: image/webp,*/*\r\nAccept-Language: fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3\r\nAccept-Encoding: gzip, deflate\r\nDNT: 1\r\nConnection: keep-alive\r\nReferer: http://127.0.0.1:1234/files/\r\n\r\n'
+		
+b'HTTP/1.1 200 OK\r\nDate: Tue, 03 Nov 2020 09:54:05 GMT\r\nServer: Apache/2.4.29 (Ubuntu)\r\nLast-Modified: Sat, 20 Nov 2004 20:16:24 GMT\r\nETag: "135-3e9564c23b600"\r\nAccept-Ranges: bytes\r\nContent-Length: 309\r\nKeep-Alive: timeout=5, max=100\r\nConnection: Keep-Alive\r\nContent-Type: image/gif'
+		
+TIME: 2020-11-03 10:54:05.987836
+b'GET /icons/blank.gif HTTP/1.1\r\nHost: 127.0.0.1:1234\r\nUser-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:82.0) Gecko/20100101 Firefox/82.0\r\nAccept: image/webp,*/*\r\nAccept-Language: fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3\r\nAccept-Encoding: gzip, deflate\r\nDNT: 1\r\nConnection: keep-alive\r\nReferer: http://127.0.0.1:1234/files/\r\n\r\n'
+		
+b'HTTP/1.1 200 OK\r\nDate: Tue, 03 Nov 2020 09:54:05 GMT\r\nServer: Apache/2.4.29 (Ubuntu)\r\nLast-Modified: Sat, 20 Nov 2004 20:16:24 GMT\r\nETag: "94-3e9564c23b600"\r\nAccept-Ranges: bytes\r\nContent-Length: 148\r\nKeep-Alive: timeout=5, max=100\r\nConnection: Keep-Alive\r\nContent-Type: image/gif'
+		
+TIME: 2020-11-03 10:54:05.988358
+b'GET /icons/text.gif HTTP/1.1\r\nHost: 127.0.0.1:1234\r\nUser-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:82.0) Gecko/20100101 Firefox/82.0\r\nAccept: image/webp,*/*\r\nAccept-Language: fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3\r\nAccept-Encoding: gzip, deflate\r\nDNT: 1\r\nConnection: keep-alive\r\nReferer: http://127.0.0.1:1234/files/\r\n\r\n'
+		
+b'HTTP/1.1 200 OK\r\nDate: Tue, 03 Nov 2020 09:54:05 GMT\r\nServer: Apache/2.4.29 (Ubuntu)\r\nLast-Modified: Sat, 20 Nov 2004 20:16:24 GMT\r\nETag: "e5-3e9564c23b600"\r\nAccept-Ranges: bytes\r\nContent-Length: 229\r\nKeep-Alive: timeout=5, max=100\r\nConnection: Keep-Alive\r\nContent-Type: image/gif'
+		
+TIME: 2020-11-03 10:54:05.989146
+b'GET /icons/unknown.gif HTTP/1.1\r\nHost: 127.0.0.1:1234\r\nUser-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:82.0) Gecko/20100101 Firefox/82.0\r\nAccept: image/webp,*/*\r\nAccept-Language: fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3\r\nAccept-Encoding: gzip, deflate\r\nDNT: 1\r\nConnection: keep-alive\r\nReferer: http://127.0.0.1:1234/files/\r\n\r\n'
+		
+b'HTTP/1.1 200 OK\r\nDate: Tue, 03 Nov 2020 09:54:05 GMT\r\nServer: Apache/2.4.29 (Ubuntu)\r\nLast-Modified: Sat, 20 Nov 2004 20:16:24 GMT\r\nETag: "f5-3e9564c23b600"\r\nAccept-Ranges: bytes\r\nContent-Length: 245\r\nKeep-Alive: timeout=5, max=100\r\nConnection: Keep-Alive\r\nContent-Type: image/gif'
+		
+TIME: 2020-11-03 10:54:15.521155
+b'GET /files/PROGRES2020-Projet1.pdf HTTP/1.1\r\nHost: 127.0.0.1:1234\r\nUser-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:82.0) Gecko/20100101 Firefox/82.0\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8\r\nAccept-Language: fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3\r\nAccept-Encoding: gzip, deflate\r\nDNT: 1\r\nConnection: keep-alive\r\nReferer: http://127.0.0.1:1234/files/\r\nUpgrade-Insecure-Requests: 1\r\n\r\n'
+		
+SIZE: 82644
+b'HTTP/1.1 200 OK\r\nDate: Tue, 03 Nov 2020 09:54:15 GMT\r\nServer: Apache/2.4.29 (Ubuntu)\r\nLast-Modified: Sun, 01 Nov 2020 16:10:22 GMT\r\nETag: "142d4-5b30dddeb5b07"\r\nAccept-Ranges: bytes\r\nContent-Length: 82644\r\nKeep-Alive: timeout=5, max=100\r\nConnection: Keep-Alive\r\nContent-Type: application/pdf'
+		
+TIME: 2020-11-03 10:54:36.854168
+b'GET /files/response1.txt HTTP/1.1\r\nHost: 127.0.0.1:1234\r\nUser-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:82.0) Gecko/20100101 Firefox/82.0\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8\r\nAccept-Language: fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3\r\nAccept-Encoding: gzip, deflate\r\nDNT: 1\r\nConnection: keep-alive\r\nUpgrade-Insecure-Requests: 1\r\n\r\n'
+		
+SIZE: 11
+b'HTTP/1.1 200 OK\r\nDate: Tue, 03 Nov 2020 09:54:36 GMT\r\nServer: Apache/2.4.29 (Ubuntu)\r\nLast-Modified: Sun, 01 Nov 2020 09:57:19 GMT\r\nETag: "b-5b308a7cbbcfe"\r\nAccept-Ranges: bytes\r\nContent-Length: 11\r\nKeep-Alive: timeout=5, max=100\r\nConnection: Keep-Alive\r\nContent-Type: text/plain'
+		
