@@ -52,13 +52,20 @@ def request_to_server(connSocket, req):
 		content = ''.encode('utf-8') #Conserve toutes les données provenant du serveur
 		
 		#Récupèration des données provenant du serveur
+		data = serverSocket.recv(bufferSize)
+		respLength = 0
 		while True:
-			data = serverSocket.recv(bufferSize)
 			if not data or len(data)==0:
 				break
 			content += data
-			if len(data) < bufferSize: #Si la longueur de data == bufferSize, alors il y a d'autres données encore à recevoir
+			if b"\r\nContent-Length" in data:
+				for d in re.split(b"\r\n", data):
+					if b"Content-Length" in d:
+						respLength += int(d.replace(b"Content-Length: ", b""))
+			respLength -= bufferSize
+			if respLength <= 0:
 				break
+			data = serverSocket.recv(bufferSize)
 		connSocket.sendall(content)
 		print("All data sent\n")
 
@@ -95,24 +102,22 @@ def logger_file(reqData, respData):
 	p correspond au chemin du fichier
 	"""
 	try:
-		isFile = False
 		#Ajoute la requête du client dans le fichier de log ainsi que la date et l'heure
 		if reqData != b'':
 			#Récupère les informations sur le fichier en question
 			filePath, filename = file_infos(reqData)
-			
-			#Vérifie si le fichier existe
-			if not Path(filePath).is_dir() and Path(filePath).exists():
-				isFile = True
+
 			data = "TIME: "+str(datetime.now())+'\n'
 			data += str(reqData) + loggerDelimiter
 		
 		#Ajoute la réponse du serveur dans le fichier de log ainsi que la taille du fichier si isFile est vrai
 		if respData != b'':
-			if isFile:
-				size = str(Path(filePath).stat().st_size)
-				data += "SIZE: "+size+'\n'
-			
+			dataSplitted = re.split(b"\r\n\r\n", respData)[0]
+			if b"\r\nContent-Length" in dataSplitted:
+				for content in re.split(b"\r\n", dataSplitted):
+					if b"Content-Length" in content:
+						size = content.replace(b"Content-Length: ", b"").decode('utf-8')
+						data += "SIZE: "+str(size)+'\n'
 			data += str(re.split(b"\r\n\r\n",respData)[0]) + loggerDelimiter
 		
 		#Ecriture dans le fichier de log

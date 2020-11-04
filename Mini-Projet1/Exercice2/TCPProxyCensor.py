@@ -54,13 +54,20 @@ def request_to_server(connSocket, req):
 			content = ''.encode('utf-8') #Conserve toutes les données provenant du serveur
 			
 			#Récupèration des données provenant du serveur
+			data = serverSocket.recv(bufferSize)
+			respLength = 0
 			while True:
-				data = serverSocket.recv(bufferSize)
 				if not data or len(data)==0:
 					break
 				content += data
-				if len(data) < bufferSize: #Si la longueur de data == bufferSize, alors il y a d'autres données encore à recevoir
+				if b"\r\nContent-Length" in data:
+					for d in re.split(b"\r\n", data):
+						if b"Content-Length" in d:
+							respLength += int(d.replace(b"Content-Length: ", b""))
+				respLength -= bufferSize
+				if respLength <= 0:
 					break
+				data = serverSocket.recv(bufferSize)
 			connSocket.sendall(content)
 			print("All data sent\n")
 			
@@ -106,7 +113,7 @@ def check_file(reqData):
 	try:
 		filePath, filename = file_infos(reqData)
 		print("Checking file: ", filePath)
-		if filename in censor_ForbiddenFiles:
+		if Path(filePath).exists() and filename in censor_ForbiddenFiles:
 			isAllowed = False
 		return isAllowed
 	except Exception as exc:
