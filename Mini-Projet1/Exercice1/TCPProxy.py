@@ -45,9 +45,9 @@ def request_to_server(connSocket, req):
 		content = ''.encode('utf-8') #Conserve toutes les données provenant du serveur
 		
 		#Récupèration des données provenant du serveur
-		data = serverSocket.recv(bufferSize)
 		respLength = 0
 		while True:
+			data = serverSocket.recv(bufferSize)
 			if not data or len(data)==0:
 				break
 			content += data
@@ -58,7 +58,6 @@ def request_to_server(connSocket, req):
 			respLength -= bufferSize
 			if respLength <= 0:
 				break
-			data = serverSocket.recv(bufferSize)
 		connSocket.sendall(content)
 		print("All data sent\n")
 		
