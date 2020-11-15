@@ -1,0 +1,949 @@
+Exercice 4:
+
+----- Question 2:
+Afghanistan
+Afrique du Sud
+Albanie
+Algérie
+Allemagne
+Andorre
+Angola
+Anguilla (Royaume-Uni)
+Antigua-et-Barbuda
+Arabie saoudite
+Argentine
+Arménie
+Aruba (Pays-Bas)
+Australie
+Autriche
+Azerbaïdjan
+Bahamas
+Bahreïn
+Bangladesh
+Barbade
+Belgique
+Belize
+Bénin
+Bermudes (Royaume-Uni)
+Bhoutan
+Biélorussie
+Birmanie
+Bolivie
+Bosnie-Herzégovine
+Botswana
+Brésil
+Brunei
+Bulgarie
+Burkina Faso
+Burundi
+Îles Caïmans (Royaume-Uni)
+Cambodge
+Cameroun
+Canada
+Cap-Vert
+République centrafricaine
+Chili
+Chine
+Chypre
+Colombie
+Comores
+République du Congo
+République démocratique du Congo
+Îles Cook (Nouvelle-Zélande)
+Corée du Nord
+Corée du Sud
+Costa Rica
+Côte d'Ivoire
+Croatie
+Cuba
+Curaçao (Pays-Bas)
+Danemark
+Djibouti
+République dominicaine
+Dominique
+Égypte
+Émirats arabes unis
+Équateur
+Érythrée
+Espagne
+Estonie
+Eswatini (Swaziland)
+États-Unis
+Éthiopie
+Îles Féroé (Danemark)
+Fidji
+Finlande
+France
+Gabon
+Gambie
+Géorgie
+Ghana
+Gibraltar (Royaume-Uni)
+Grèce
+Grenade
+Groenland (Danemark)
+Guadeloupe (France)
+Guam (États-Unis)
+Guatemala
+Guernesey et  Jersey (Royaume-Uni)
+Guinée
+Guinée-Bissau
+Guinée équatoriale
+Guyana
+Guyane (France)
+Haïti
+Honduras
+Hong Kong (Chine)
+Hongrie
+Inde
+Indonésie
+Irak
+Iran
+Irlande
+Islande
+Israël
+Italie
+Jamaïque
+Japon
+Jordanie
+Kazakhstan
+Kenya
+Kirghizistan
+Kiribati
+Koweït
+Laos
+Lesotho
+Lettonie
+Liban
+Liberia
+Libye
+Liechtenstein
+Lituanie
+Luxembourg
+Macao (Chine)
+Macédoine du Nord
+Madagascar
+Malaisie
+Malawi
+Maldives
+Mali
+Malouines (Royaume-Uni)
+Malte
+Île de Man (Royaume-Uni)
+Îles Mariannes du Nord (États-Unis)
+Maroc
+Îles Marshall
+Martinique (France)
+Maurice
+Mauritanie
+Mayotte (France)
+Mexique
+États fédérés de Micronésie
+Moldavie
+Monaco
+Mongolie
+Monténégro
+Montserrat (Royaume-Uni)
+Mozambique
+Namibie
+Nauru
+Népal
+Nicaragua
+Niger
+Nigeria
+Niue (Nouvelle-Zélande)
+Norvège
+Nouvelle-Calédonie (France)
+Nouvelle-Zélande
+Oman
+Ouganda
+Ouzbékistan
+Pakistan
+Palaos
+Palestine
+Panama
+Papouasie-Nouvelle-Guinée
+Paraguay
+Pays-Bas
+Pérou
+Philippines
+Pologne
+Polynésie française (France)
+Porto Rico (États-Unis)
+Portugal
+Qatar
+La Réunion (France)
+Roumanie
+Royaume-Uni
+Russie
+Rwanda
+Sahara occidental
+Saint-Christophe-et-Niévès
+Saint-Marin
+Saint-Martin (Pays-Bas)
+Saint-Pierre-et-Miquelon (France)
+Saint-Vincent-et-les-Grenadines
+Sainte-Hélène, Ascension et Tristan da Cunha (Royaume-Uni)
+Sainte-Lucie
+Salomon
+Salvador
+Samoa
+Samoa américaines (États-Unis)
+Sao Tomé-et-Principe
+Sénégal
+Serbie
+Seychelles
+Sierra Leone
+Singapour
+Slovaquie
+Slovénie
+Somalie
+Soudan
+Soudan du Sud
+Sri Lanka
+Suède
+Suisse
+Suriname
+Syrie
+Tadjikistan
+Taïwan
+Tanzanie
+Tchad
+Tchéquie
+Thaïlande
+Timor oriental
+Togo
+Tokelau (Nouvelle-Zélande)
+Tonga
+Trinité-et-Tobago
+Tunisie
+Turkménistan
+Îles Turques-et-Caïques (Royaume-Uni)
+Turquie
+Tuvalu
+Ukraine
+Uruguay
+Vanuatu
+Vatican
+Venezuela
+Îles Vierges britanniques (Royaume-Uni)
+Îles Vierges des États-Unis (États-Unis)
+Viêt Nam
+Wallis-et-Futuna (France)
+Yémen
+Zambie
+Zimbabwe
+Nombre de pays: 232
+
+----- Question 3-4:
+LIEN: https://fr.wikipedia.org/wiki/Afghanistan
+LIEN: https://fr.wikipedia.org/wiki/Afrique du Sud
+LIEN: https://fr.wikipedia.org/wiki/Albanie
+LIEN: https://fr.wikipedia.org/wiki/Algérie
+LIEN: https://fr.wikipedia.org/wiki/Allemagne
+LIEN: https://fr.wikipedia.org/wiki/Andorre
+LIEN: https://fr.wikipedia.org/wiki/Angola
+LIEN: https://fr.wikipedia.org/wiki/Anguilla
+LIEN: https://fr.wikipedia.org/wiki/Antigua-et-Barbuda
+LIEN: https://fr.wikipedia.org/wiki/Arabie saoudite
+LIEN: https://fr.wikipedia.org/wiki/Argentine
+LIEN: https://fr.wikipedia.org/wiki/Arménie
+LIEN: https://fr.wikipedia.org/wiki/Aruba
+LIEN: https://fr.wikipedia.org/wiki/Australie
+LIEN: https://fr.wikipedia.org/wiki/Autriche
+LIEN: https://fr.wikipedia.org/wiki/Azerbaïdjan
+LIEN: https://fr.wikipedia.org/wiki/Bahamas
+LIEN: https://fr.wikipedia.org/wiki/Bahreïn
+LIEN: https://fr.wikipedia.org/wiki/Bangladesh
+LIEN: https://fr.wikipedia.org/wiki/Barbade
+LIEN: https://fr.wikipedia.org/wiki/Belgique
+LIEN: https://fr.wikipedia.org/wiki/Belize
+LIEN: https://fr.wikipedia.org/wiki/Bénin
+LIEN: https://fr.wikipedia.org/wiki/Bermudes
+LIEN: https://fr.wikipedia.org/wiki/Bhoutan
+LIEN: https://fr.wikipedia.org/wiki/Biélorussie
+LIEN: https://fr.wikipedia.org/wiki/Birmanie
+LIEN: https://fr.wikipedia.org/wiki/Bolivie
+LIEN: https://fr.wikipedia.org/wiki/Bosnie-Herzégovine
+LIEN: https://fr.wikipedia.org/wiki/Botswana
+LIEN: https://fr.wikipedia.org/wiki/Brésil
+LIEN: https://fr.wikipedia.org/wiki/Brunei
+LIEN: https://fr.wikipedia.org/wiki/Bulgarie
+LIEN: https://fr.wikipedia.org/wiki/Burkina Faso
+LIEN: https://fr.wikipedia.org/wiki/Burundi
+LIEN: https://fr.wikipedia.org/wiki/Îles Caïmans
+LIEN: https://fr.wikipedia.org/wiki/Cambodge
+LIEN: https://fr.wikipedia.org/wiki/Cameroun
+LIEN: https://fr.wikipedia.org/wiki/Canada
+LIEN: https://fr.wikipedia.org/wiki/Cap-Vert
+LIEN: https://fr.wikipedia.org/wiki/République centrafricaine
+LIEN: https://fr.wikipedia.org/wiki/Chili
+LIEN: https://fr.wikipedia.org/wiki/Chine
+LIEN: https://fr.wikipedia.org/wiki/Chypre (pays)
+LIEN: https://fr.wikipedia.org/wiki/Colombie
+LIEN: https://fr.wikipedia.org/wiki/Comores (pays)
+LIEN: https://fr.wikipedia.org/wiki/République du Congo
+LIEN: https://fr.wikipedia.org/wiki/République démocratique du Congo
+LIEN: https://fr.wikipedia.org/wiki/Îles Cook
+LIEN: https://fr.wikipedia.org/wiki/Royaume de Nouvelle-Zélande
+LIEN: https://fr.wikipedia.org/wiki/Corée du Nord
+LIEN: https://fr.wikipedia.org/wiki/Corée du Sud
+LIEN: https://fr.wikipedia.org/wiki/Costa Rica
+LIEN: https://fr.wikipedia.org/wiki/Côte d'Ivoire
+LIEN: https://fr.wikipedia.org/wiki/Croatie
+LIEN: https://fr.wikipedia.org/wiki/Cuba
+LIEN: https://fr.wikipedia.org/wiki/Curaçao
+LIEN: https://fr.wikipedia.org/wiki/Danemark
+LIEN: https://fr.wikipedia.org/wiki/Djibouti
+LIEN: https://fr.wikipedia.org/wiki/République dominicaine
+LIEN: https://fr.wikipedia.org/wiki/Dominique (pays)
+LIEN: https://fr.wikipedia.org/wiki/Égypte
+LIEN: https://fr.wikipedia.org/wiki/Émirats arabes unis
+LIEN: https://fr.wikipedia.org/wiki/Équateur (pays)
+LIEN: https://fr.wikipedia.org/wiki/Érythrée
+LIEN: https://fr.wikipedia.org/wiki/Espagne
+LIEN: https://fr.wikipedia.org/wiki/Estonie
+LIEN: https://fr.wikipedia.org/wiki/Eswatini
+LIEN: https://fr.wikipedia.org/wiki/États-Unis
+LIEN: https://fr.wikipedia.org/wiki/Éthiopie
+LIEN: https://fr.wikipedia.org/wiki/Îles Féroé
+LIEN: https://fr.wikipedia.org/wiki/Fidji
+LIEN: https://fr.wikipedia.org/wiki/Finlande
+LIEN: https://fr.wikipedia.org/wiki/France
+LIEN: https://fr.wikipedia.org/wiki/Gabon
+LIEN: https://fr.wikipedia.org/wiki/Gambie
+LIEN: https://fr.wikipedia.org/wiki/Géorgie (pays)
+LIEN: https://fr.wikipedia.org/wiki/Ghana
+LIEN: https://fr.wikipedia.org/wiki/Gibraltar
+LIEN: https://fr.wikipedia.org/wiki/Grèce
+LIEN: https://fr.wikipedia.org/wiki/Grenade (pays)
+LIEN: https://fr.wikipedia.org/wiki/Groenland
+LIEN: https://fr.wikipedia.org/wiki/Guadeloupe
+LIEN: https://fr.wikipedia.org/wiki/Guam
+LIEN: https://fr.wikipedia.org/wiki/Guatemala
+LIEN: https://fr.wikipedia.org/wiki/Bailliage de Guernesey
+LIEN: https://fr.wikipedia.org/wiki/Bailliage de Jersey
+LIEN: https://fr.wikipedia.org/wiki/Bailliage de Guernesey
+LIEN: https://fr.wikipedia.org/wiki/Bailliage de Jersey
+LIEN: https://fr.wikipedia.org/wiki/Guinée
+LIEN: https://fr.wikipedia.org/wiki/Guinée-Bissau
+LIEN: https://fr.wikipedia.org/wiki/Guinée équatoriale
+LIEN: https://fr.wikipedia.org/wiki/Guyana
+LIEN: https://fr.wikipedia.org/wiki/Guyane
+LIEN: https://fr.wikipedia.org/wiki/Haïti
+LIEN: https://fr.wikipedia.org/wiki/Honduras
+LIEN: https://fr.wikipedia.org/wiki/Hong Kong
+LIEN: https://fr.wikipedia.org/wiki/Hongrie
+LIEN: https://fr.wikipedia.org/wiki/Inde
+LIEN: https://fr.wikipedia.org/wiki/Indonésie
+LIEN: https://fr.wikipedia.org/wiki/Irak
+LIEN: https://fr.wikipedia.org/wiki/Iran
+LIEN: https://fr.wikipedia.org/wiki/Irlande (pays)
+LIEN: https://fr.wikipedia.org/wiki/Islande
+LIEN: https://fr.wikipedia.org/wiki/Israël
+LIEN: https://fr.wikipedia.org/wiki/Italie
+LIEN: https://fr.wikipedia.org/wiki/Jamaïque
+LIEN: https://fr.wikipedia.org/wiki/Japon
+LIEN: https://fr.wikipedia.org/wiki/Jordanie
+LIEN: https://fr.wikipedia.org/wiki/Kazakhstan
+LIEN: https://fr.wikipedia.org/wiki/Kenya
+LIEN: https://fr.wikipedia.org/wiki/Kirghizistan
+LIEN: https://fr.wikipedia.org/wiki/Kiribati
+LIEN: https://fr.wikipedia.org/wiki/Koweït
+LIEN: https://fr.wikipedia.org/wiki/Laos
+LIEN: https://fr.wikipedia.org/wiki/Lesotho
+LIEN: https://fr.wikipedia.org/wiki/Lettonie
+LIEN: https://fr.wikipedia.org/wiki/Liban
+LIEN: https://fr.wikipedia.org/wiki/Liberia
+LIEN: https://fr.wikipedia.org/wiki/Libye
+LIEN: https://fr.wikipedia.org/wiki/Liechtenstein
+LIEN: https://fr.wikipedia.org/wiki/Lituanie
+LIEN: https://fr.wikipedia.org/wiki/Luxembourg
+LIEN: https://fr.wikipedia.org/wiki/Macao
+LIEN: https://fr.wikipedia.org/wiki/Macédoine du Nord
+LIEN: https://fr.wikipedia.org/wiki/Madagascar
+LIEN: https://fr.wikipedia.org/wiki/Malaisie
+LIEN: https://fr.wikipedia.org/wiki/Malawi
+LIEN: https://fr.wikipedia.org/wiki/Maldives
+LIEN: https://fr.wikipedia.org/wiki/Mali
+LIEN: https://fr.wikipedia.org/wiki/Îles Malouines
+LIEN: https://fr.wikipedia.org/wiki/Malte
+LIEN: https://fr.wikipedia.org/wiki/Île de Man
+LIEN: https://fr.wikipedia.org/wiki/Îles Mariannes du Nord
+LIEN: https://fr.wikipedia.org/wiki/Maroc
+LIEN: https://fr.wikipedia.org/wiki/Îles Marshall
+LIEN: https://fr.wikipedia.org/wiki/Martinique
+LIEN: https://fr.wikipedia.org/wiki/Maurice (pays)
+LIEN: https://fr.wikipedia.org/wiki/Mauritanie
+LIEN: https://fr.wikipedia.org/wiki/Mayotte
+LIEN: https://fr.wikipedia.org/wiki/Mexique
+LIEN: https://fr.wikipedia.org/wiki/États fédérés de Micronésie
+LIEN: https://fr.wikipedia.org/wiki/Moldavie
+LIEN: https://fr.wikipedia.org/wiki/Monaco
+LIEN: https://fr.wikipedia.org/wiki/Mongolie
+LIEN: https://fr.wikipedia.org/wiki/Monténégro
+LIEN: https://fr.wikipedia.org/wiki/Montserrat (Antilles)
+LIEN: https://fr.wikipedia.org/wiki/Mozambique
+LIEN: https://fr.wikipedia.org/wiki/Namibie
+LIEN: https://fr.wikipedia.org/wiki/Nauru
+LIEN: https://fr.wikipedia.org/wiki/Népal
+LIEN: https://fr.wikipedia.org/wiki/Nicaragua
+LIEN: https://fr.wikipedia.org/wiki/Niger
+LIEN: https://fr.wikipedia.org/wiki/Nigeria
+LIEN: https://fr.wikipedia.org/wiki/Niue
+LIEN: https://fr.wikipedia.org/wiki/Norvège
+LIEN: https://fr.wikipedia.org/wiki/Nouvelle-Calédonie
+LIEN: https://fr.wikipedia.org/wiki/Oman
+LIEN: https://fr.wikipedia.org/wiki/Ouganda
+LIEN: https://fr.wikipedia.org/wiki/Ouzbékistan
+LIEN: https://fr.wikipedia.org/wiki/Pakistan
+LIEN: https://fr.wikipedia.org/wiki/Palaos
+LIEN: https://fr.wikipedia.org/wiki/Palestine (État)
+LIEN: https://fr.wikipedia.org/wiki/Panama
+LIEN: https://fr.wikipedia.org/wiki/Papouasie-Nouvelle-Guinée
+LIEN: https://fr.wikipedia.org/wiki/Paraguay
+LIEN: https://fr.wikipedia.org/wiki/Pays-Bas
+LIEN: https://fr.wikipedia.org/wiki/Pérou
+LIEN: https://fr.wikipedia.org/wiki/Philippines
+LIEN: https://fr.wikipedia.org/wiki/Pologne
+LIEN: https://fr.wikipedia.org/wiki/Polynésie française
+LIEN: https://fr.wikipedia.org/wiki/Porto Rico
+LIEN: https://fr.wikipedia.org/wiki/Portugal
+LIEN: https://fr.wikipedia.org/wiki/Qatar
+LIEN: https://fr.wikipedia.org/wiki/La Réunion
+LIEN: https://fr.wikipedia.org/wiki/Roumanie
+LIEN: https://fr.wikipedia.org/wiki/Royaume-Uni
+LIEN: https://fr.wikipedia.org/wiki/Russie
+LIEN: https://fr.wikipedia.org/wiki/Rwanda
+LIEN: https://fr.wikipedia.org/wiki/Sahara occidental
+LIEN: https://fr.wikipedia.org/wiki/Saint-Christophe-et-Niévès
+LIEN: https://fr.wikipedia.org/wiki/Saint-Marin
+LIEN: https://fr.wikipedia.org/wiki/Saint-Martin (royaume des Pays-Bas)
+LIEN: https://fr.wikipedia.org/wiki/Saint-Pierre-et-Miquelon
+LIEN: https://fr.wikipedia.org/wiki/Saint-Vincent-et-les-Grenadines
+LIEN: https://fr.wikipedia.org/wiki/Sainte-Hélène, Ascension et Tristan da Cunha
+LIEN: https://fr.wikipedia.org/wiki/Sainte-Lucie
+LIEN: https://fr.wikipedia.org/wiki/Îles Salomon
+LIEN: https://fr.wikipedia.org/wiki/Salvador
+LIEN: https://fr.wikipedia.org/wiki/Samoa
+LIEN: https://fr.wikipedia.org/wiki/Samoa américaines
+LIEN: https://fr.wikipedia.org/wiki/Sao Tomé-et-Principe
+LIEN: https://fr.wikipedia.org/wiki/Sénégal
+LIEN: https://fr.wikipedia.org/wiki/Serbie
+LIEN: https://fr.wikipedia.org/wiki/Seychelles
+LIEN: https://fr.wikipedia.org/wiki/Sierra Leone
+LIEN: https://fr.wikipedia.org/wiki/Singapour
+LIEN: https://fr.wikipedia.org/wiki/Slovaquie
+LIEN: https://fr.wikipedia.org/wiki/Slovénie
+LIEN: https://fr.wikipedia.org/wiki/Somalie
+LIEN: https://fr.wikipedia.org/wiki/Soudan
+LIEN: https://fr.wikipedia.org/wiki/Soudan du Sud
+LIEN: https://fr.wikipedia.org/wiki/Sri Lanka
+LIEN: https://fr.wikipedia.org/wiki/Suède
+LIEN: https://fr.wikipedia.org/wiki/Suisse
+LIEN: https://fr.wikipedia.org/wiki/Suriname
+LIEN: https://fr.wikipedia.org/wiki/Syrie
+LIEN: https://fr.wikipedia.org/wiki/Tadjikistan
+LIEN: https://fr.wikipedia.org/wiki/Taïwan
+LIEN: https://fr.wikipedia.org/wiki/Tanzanie
+LIEN: https://fr.wikipedia.org/wiki/Tchad
+LIEN: https://fr.wikipedia.org/wiki/Tchéquie
+LIEN: https://fr.wikipedia.org/wiki/Thaïlande
+LIEN: https://fr.wikipedia.org/wiki/Timor oriental
+LIEN: https://fr.wikipedia.org/wiki/Togo
+LIEN: https://fr.wikipedia.org/wiki/Tokelau
+LIEN: https://fr.wikipedia.org/wiki/Tonga
+LIEN: https://fr.wikipedia.org/wiki/Trinité-et-Tobago
+LIEN: https://fr.wikipedia.org/wiki/Tunisie
+LIEN: https://fr.wikipedia.org/wiki/Turkménistan
+LIEN: https://fr.wikipedia.org/wiki/Îles Turques-et-Caïques
+LIEN: https://fr.wikipedia.org/wiki/Turquie
+LIEN: https://fr.wikipedia.org/wiki/Tuvalu
+LIEN: https://fr.wikipedia.org/wiki/Ukraine
+LIEN: https://fr.wikipedia.org/wiki/Uruguay
+LIEN: https://fr.wikipedia.org/wiki/Vanuatu
+LIEN: https://fr.wikipedia.org/wiki/Vatican
+LIEN: https://fr.wikipedia.org/wiki/Venezuela
+LIEN: https://fr.wikipedia.org/wiki/Îles Vierges britanniques
+LIEN: https://fr.wikipedia.org/wiki/Îles Vierges des États-Unis
+LIEN: https://fr.wikipedia.org/wiki/Viêt Nam
+LIEN: https://fr.wikipedia.org/wiki/Wallis-et-Futuna
+LIEN: https://fr.wikipedia.org/wiki/Yémen
+LIEN: https://fr.wikipedia.org/wiki/Zambie
+LIEN: https://fr.wikipedia.org/wiki/Zimbabwe
+{'Rang': 1, 'Pays': 'Monaco', 'Densité': 26105.4, 'Population': '38100', 'Superficie': '2.02'}
+{'Rang': 2, 'Pays': 'Macao', 'Densité': 21151.1, 'Population': '631636', 'Superficie': '30.4'}
+{'Rang': 3, 'Pays': 'Singapour', 'Densité': 8274.1, 'Population': '6209660', 'Superficie': '724.2'}
+{'Rang': 4, 'Pays': 'Hong Kong', 'Densité': 7075.1, 'Population': '7466441', 'Superficie': '1104'}
+{'Rang': 5, 'Pays': 'Gibraltar', 'Densité': 3473.3, 'Population': '32247', 'Superficie': '6.8'}
+{'Rang': 6, 'Pays': 'Bahreïn', 'Densité': 2061.8, 'Population': '1442659', 'Superficie': '765'}
+{'Rang': 7, 'Pays': 'Vatican', 'Densité': 1820.5, 'Population': '453', 'Superficie': '0.439'}
+{'Rang': 8, 'Pays': 'Maldives', 'Densité': 1480.9, 'Population': '392709', 'Superficie': '298'}
+{'Rang': 9, 'Pays': 'Malte', 'Densité': 1350.3, 'Population': '457267', 'Superficie': '316'}
+{'Rang': 10, 'Pays': 'Bangladesh', 'Densité': 1278.1, 'Population': '162650853', 'Superficie': '147570'}
+{'Rang': 11, 'Pays': 'Bermudes', 'Densité': 1221.4, 'Population': '71750', 'Superficie': '54'}
+{'Rang': 12, 'Pays': 'Saint-Martin', 'Densité': 1192.7, 'Population': '37224', 'Superficie': '34'}
+{'Rang': 13, 'Pays': 'Jersey', 'Densité': 874.1, 'Population': '105500', 'Superficie': '123'}
+{'Rang': 13, 'Pays': 'Guernesey', 'Densité': 874.1, 'Population': '65849', 'Superficie': '78'}
+{'Rang': 14, 'Pays': 'Palestine', 'Densité': 839.3, 'Population': '5090293', 'Superficie': '6020'}
+{'Rang': 15, 'Pays': 'Mayotte', 'Densité': 692.5, 'Population': '256518', 'Superficie': '376'}
+{'Rang': 16, 'Pays': 'Taïwan', 'Densité': 669.1, 'Population': '23603049', 'Superficie': '35980'}
+{'Rang': 17, 'Pays': 'Barbade', 'Densité': 666.0, 'Population': '294560', 'Superficie': '430'}
+{'Rang': 18, 'Pays': 'Maurice', 'Densité': 624.8, 'Population': '1379365', 'Superficie': '2040'}
+{'Rang': 19, 'Pays': 'Liban', 'Densité': 595.7, 'Population': '5469612', 'Superficie': '10452'}
+{'Rang': 20, 'Pays': 'Aruba', 'Densité': 587.1, 'Population': '119428', 'Superficie': '189'}
+{'Rang': 21, 'Pays': 'Nauru', 'Densité': 565.6, 'Population': '13649', 'Superficie': '21'}
+{'Rang': 22, 'Pays': 'Saint-Marin', 'Densité': 559.3, 'Population': '33607', 'Superficie': '61.19'}
+{'Rang': 23, 'Pays': 'Corée du Sud', 'Densité': 526.2, 'Population': '51709098', 'Superficie': '100210'}
+{'Rang': 24, 'Pays': 'Rwanda', 'Densité': 506.7, 'Population': '12712431', 'Superficie': '26338'}
+{'Rang': 25, 'Pays': 'Pays-Bas', 'Densité': 506.7, 'Population': '17282163', 'Superficie': '41530'}
+{'Rang': 26, 'Pays': 'Inde', 'Densité': 455.4, 'Population': '1326093247', 'Superficie': '3287263'}
+{'Rang': 27, 'Pays': 'Comores', 'Densité': 447.3, 'Population': '846281', 'Superficie': '2612'}
+{'Rang': 28, 'Pays': 'Burundi', 'Densité': 436.8, 'Population': '11865821', 'Superficie': '27834'}
+{'Rang': 29, 'Pays': 'Porto Rico', 'Densité': 412.5, 'Population': '3193694', 'Superficie': '8870'}
+{'Rang': 30, 'Pays': 'Haïti', 'Densité': 403.2, 'Population': '11067777', 'Superficie': '27750'}
+{'Rang': 31, 'Pays': 'Israël', 'Densité': 390.6, 'Population': '9213000', 'Superficie': '20770–22072'}
+{'Rang': 32, 'Pays': 'Belgique', 'Densité': 379.7, 'Population': '11476279', 'Superficie': '30688'}
+{'Rang': 33, 'Pays': 'Tuvalu', 'Densité': 376.2, 'Population': '11342', 'Superficie': '26'}
+{'Rang': 34, 'Pays': 'Curaçao', 'Densité': 363.9, 'Population': '158665', 'Superficie': '444'}
+{'Rang': 35, 'Pays': 'Martinique', 'Densité': 363.3, 'Population': '372594', 'Superficie': '1128'}
+{'Rang': 36, 'Pays': 'Philippines', 'Densité': 357.2, 'Population': '109180815', 'Superficie': '300400'}
+{'Rang': 37, 'Pays': 'La Réunion', 'Densité': 353.3, 'Population': '853659', 'Superficie': '2512'}
+{'Rang': 38, 'Pays': 'Japon', 'Densité': 348.9, 'Population': '125507472', 'Superficie': '377975'}
+{'Rang': 39, 'Pays': 'Sri Lanka', 'Densité': 334.1, 'Population': '22889201', 'Superficie': '65610'}
+{'Rang': 40, 'Pays': 'Grenade', 'Densité': 318.6, 'Population': '113094', 'Superficie': '344'}
+{'Rang': 41, 'Pays': 'Viêt Nam', 'Densité': 311.2, 'Population': '98721275', 'Superficie': '330967'}
+{'Rang': 42, 'Pays': 'Salvador', 'Densité': 309.4, 'Population': '6481102', 'Superficie': '20742'}
+{'Rang': 43, 'Pays': 'Guam', 'Densité': 306.9, 'Population': '164229', 'Superficie': '549'}
+{'Rang': 44, 'Pays': 'Îles Vierges des États-Unis', 'Densité': 299.8, 'Population': '107268', 'Superficie': '346.4'}
+{'Rang': 45, 'Pays': 'Îles Marshall', 'Densité': 295.4, 'Population': '75684', 'Superficie': '181'}
+{'Rang': 46, 'Pays': 'Sainte-Lucie', 'Densité': 294.5, 'Population': '166487', 'Superficie': '620'}
+{'Rang': 47, 'Pays': 'Saint-Vincent-et-les-Grenadines', 'Densité': 282.6, 'Population': '101390', 'Superficie': '389'}
+{'Rang': 48, 'Pays': 'Samoa américaines', 'Densité': 278.4, 'Population': '54641', 'Superficie': '199'}
+{'Rang': 49, 'Pays': 'Royaume-Uni', 'Densité': 275.2, 'Population': '65761117', 'Superficie': '246690'}
+{'Rang': 50, 'Pays': 'Jamaïque', 'Densité': 267.7, 'Population': '2808570', 'Superficie': '11425'}
+{'Rang': 51, 'Pays': 'Trinité-et-Tobago', 'Densité': 267.6, 'Population': '1208789', 'Superficie': '5128'}
+{'Rang': 52, 'Pays': 'Guadeloupe', 'Densité': 265.8, 'Population': '390253', 'Superficie': '1628.43'}
+{'Rang': 53, 'Pays': 'Pakistan', 'Densité': 260.5, 'Population': '233500636', 'Superficie': '881913'}
+{'Rang': 54, 'Pays': 'Îles Caïmans', 'Densité': 259.8, 'Population': '61944', 'Superficie': '260'}
+{'Rang': 55, 'Pays': 'Liechtenstein', 'Densité': 238.5, 'Population': '37810', 'Superficie': '160'}
+{'Rang': 56, 'Pays': 'Allemagne', 'Densité': 236.1, 'Population': '83149300', 'Superficie': '357386'}
+{'Rang': 57, 'Pays': 'Koweït', 'Densité': 235.5, 'Population': '2993706', 'Superficie': '17818'}
+{'Rang': 58, 'Pays': 'Antigua-et-Barbuda', 'Densité': 234.2, 'Population': '98179', 'Superficie': '442'}
+{'Rang': 59, 'Pays': 'Qatar', 'Densité': 232.1, 'Population': '2444174', 'Superficie': '11586'}
+{'Rang': 60, 'Pays': 'Luxembourg', 'Densité': 227.9, 'Population': '626108', 'Superficie': '2586.4'}
+{'Rang': 61, 'Pays': 'République dominicaine', 'Densité': 225.2, 'Population': '10499707', 'Superficie': '48442'}
+{'Rang': 62, 'Pays': 'Ouganda', 'Densité': 221.6, 'Population': '41487965', 'Superficie': '241550'}
+{'Rang': 63, 'Pays': 'Sao Tomé-et-Principe', 'Densité': 217.5, 'Population': '211122', 'Superficie': '1001'}
+{'Rang': 64, 'Pays': 'Suisse', 'Densité': 216.2, 'Population': '8603900', 'Superficie': '41285'}
+{'Rang': 65, 'Pays': 'Nigeria', 'Densité': 215.1, 'Population': '214028302', 'Superficie': '923768'}
+{'Rang': 66, 'Pays': 'Saint-Christophe-et-Niévès', 'Densité': 214.8, 'Population': '53821', 'Superficie': '261'}
+{'Rang': 67, 'Pays': 'Gambie', 'Densité': 213.8, 'Population': '2173999', 'Superficie': '11300'}
+{'Rang': 68, 'Pays': 'Corée du Nord', 'Densité': 212.7, 'Population': '25381085', 'Superficie': '120540'}
+{'Rang': 69, 'Pays': 'Îles Vierges britanniques', 'Densité': 211.5, 'Population': '35802', 'Superficie': '153'}
+{'Rang': 70, 'Pays': 'Seychelles', 'Densité': 207.0, 'Population': '95981', 'Superficie': '455'}
+{'Rang': 71, 'Pays': 'Népal', 'Densité': 206.7, 'Population': '30327877', 'Superficie': '147516'}
+{'Rang': 72, 'Pays': 'Malawi', 'Densité': 203.3, 'Population': '21196629', 'Superficie': '118844'}
+{'Rang': 73, 'Pays': 'Italie', 'Densité': 201.6, 'Population': '60359546', 'Superficie': '301336'}
+{'Rang': 74, 'Pays': 'Anguilla', 'Densité': 167.2, 'Population': '18090', 'Superficie': '91'}
+{'Rang': 75, 'Pays': 'Andorre', 'Densité': 163.7, 'Population': '77000', 'Superficie': '468'}
+{'Rang': 76, 'Pays': 'Guatemala', 'Densité': 160.9, 'Population': '17153288', 'Superficie': '108890'}
+{'Rang': 77, 'Pays': 'États fédérés de Micronésie', 'Densité': 151.8, 'Population': '102624', 'Superficie': '702'}
+{'Rang': 78, 'Pays': 'Tonga', 'Densité': 151.4, 'Population': '100651', 'Superficie': '747'}
+{'Rang': 79, 'Pays': 'Chine', 'Densité': 150.7, 'Population': '1394015977', 'Superficie': '9596960'}
+{'Rang': 80, 'Pays': 'Île de Man', 'Densité': 148.8, 'Population': '83314', 'Superficie': '571'}
+{'Rang': 81, 'Pays': 'Indonésie', 'Densité': 147.3, 'Population': '267026366', 'Superficie': '1904569'}
+{'Rang': 82, 'Pays': 'Togo', 'Densité': 146.9, 'Population': '8608444', 'Superficie': '56785'}
+{'Rang': 83, 'Pays': 'Kiribati', 'Densité': 146.2, 'Population': '110110', 'Superficie': '811'}
+{'Rang': 84, 'Pays': 'Tchéquie', 'Densité': 137.6, 'Population': '10649800', 'Superficie': '78870'}
+{'Rang': 85, 'Pays': 'Cap-Vert', 'Densité': 137.3, 'Population': '583255', 'Superficie': '4033'}
+{'Rang': 86, 'Pays': 'Danemark', 'Densité': 135.6, 'Population': '5822763', 'Superficie': '2210579'}
+{'Rang': 87, 'Pays': 'Thaïlande', 'Densité': 135.4, 'Population': '68977400', 'Superficie': '514000'}
+{'Rang': 88, 'Pays': 'Tokelau', 'Densité': 131.9, 'Population': '1337', 'Superficie': '10.2'}
+{'Rang': 89, 'Pays': 'Ghana', 'Densité': 129.5, 'Population': '29340248', 'Superficie': '238540'}
+{'Rang': 90, 'Pays': 'Chypre', 'Densité': 128.7, 'Population': '1266676', 'Superficie': '9251'}
+{'Rang': 91, 'Pays': 'Pologne', 'Densité': 124.4, 'Population': '38282325', 'Superficie': '312679'}
+{'Rang': 92, 'Pays': 'Moldavie', 'Densité': 123.0, 'Population': '2681735', 'Superficie': '33851'}
+{'Rang': 93, 'Pays': 'Azerbaïdjan', 'Densité': 120.1, 'Population': '10205810', 'Superficie': '86600'}
+{'Rang': 94, 'Pays': 'Îles Mariannes du Nord', 'Densité': 120.0, 'Population': '55144', 'Superficie': '477'}
+{'Rang': 95, 'Pays': 'France', 'Densité': 119.1, 'Population': '67848156', 'Superficie': '632734'}
+{'Rang': 96, 'Pays': 'Émirats arabes unis', 'Densité': 114.1, 'Population': '9992083', 'Superficie': '82880'}
+{'Rang': 97, 'Pays': 'Slovaquie', 'Densité': 113.3, 'Population': '5457926', 'Superficie': '49035'}
+{'Rang': 98, 'Pays': 'Portugal', 'Densité': 112.4, 'Population': '10302674', 'Superficie': '92090'}
+{'Rang': 99, 'Pays': 'Jordanie', 'Densité': 111.6, 'Population': '10820644', 'Superficie': '89342'}
+{'Rang': 100, 'Pays': 'Cuba', 'Densité': 107.9, 'Population': '11116396', 'Superficie': '110860'}
+{'Rang': 101, 'Pays': 'Éthiopie', 'Densité': 107.5, 'Population': '108386391', 'Superficie': '1127127'}
+{'Rang': 102, 'Pays': 'Albanie', 'Densité': 107.1, 'Population': '3074579', 'Superficie': '28748'}
+{'Rang': 103, 'Pays': 'Sierra Leone', 'Densité': 107.0, 'Population': '6624933', 'Superficie': '71740'}
+{'Rang': 104, 'Pays': 'Hongrie', 'Densité': 107.0, 'Population': '9771827', 'Superficie': '93028'}
+{'Rang': 105, 'Pays': 'Turquie', 'Densité': 106.4, 'Population': '83154997', 'Superficie': '783562'}
+{'Rang': 106, 'Pays': 'Autriche', 'Densité': 106.2, 'Population': '8859449', 'Superficie': '83871'}
+{'Rang': 107, 'Pays': 'Slovénie', 'Densité': 103.3, 'Population': '2102678', 'Superficie': '20273'}
+{'Rang': 108, 'Pays': 'Arménie', 'Densité': 103.1, 'Population': '3021324', 'Superficie': '29743'}
+{'Rang': 109, 'Pays': 'Bénin', 'Densité': 101.9, 'Population': '12864634', 'Superficie': '114763'}
+{'Rang': 110, 'Pays': 'Serbie', 'Densité': 100.2, 'Population': '7078110', 'Superficie': '77474'}
+{'Rang': 111, 'Pays': 'Égypte', 'Densité': 99.8, 'Population': '104124440', 'Superficie': '1001450'}
+{'Rang': 112, 'Pays': 'Syrie', 'Densité': 99.6, 'Population': '19398448', 'Superficie': '185180'}
+{'Rang': 113, 'Pays': 'Dominique', 'Densité': 99.1, 'Population': '74243', 'Superficie': '754'}
+{'Rang': 114, 'Pays': 'Malaisie', 'Densité': 97.5, 'Population': '32652083', 'Superficie': '329750'}
+{'Rang': 115, 'Pays': 'Costa Rica', 'Densité': 97.0, 'Population': '5111238', 'Superficie': '51100'}
+{'Rang': 116, 'Pays': 'Espagne', 'Densité': 93.0, 'Population': '46934632', 'Superficie': '505911'}
+{'Rang': 117, 'Pays': 'Cambodge', 'Densité': 92.0, 'Population': '16926984', 'Superficie': '181035'}
+{'Rang': 118, 'Pays': 'Irak', 'Densité': 90.6, 'Population': '38872655', 'Superficie': '435052'}
+{'Rang': 119, 'Pays': 'Kenya', 'Densité': 89.5, 'Population': '47564296', 'Superficie': '580367'}
+{'Rang': 120, 'Pays': 'Timor oriental', 'Densité': 89.0, 'Population': '1321929', 'Superficie': '15410'}
+{'Rang': 121, 'Pays': 'Grèce', 'Densité': 86.4, 'Population': '10607051', 'Superficie': '131957'}
+{'Rang': 122, 'Pays': 'Roumanie', 'Densité': 85.1, 'Population': '21302893', 'Superficie': '238397'}
+{'Rang': 123, 'Pays': 'Sénégal', 'Densité': 84.6, 'Population': '16209125', 'Superficie': '196722'}
+{'Rang': 124, 'Pays': 'Honduras', 'Densité': 84.2, 'Population': '9182766', 'Superficie': '112090'}
+{'Rang': 125, 'Pays': 'Wallis-et-Futuna', 'Densité': 83.4, 'Population': '11558', 'Superficie': '124.2'}
+{'Rang': 126, 'Pays': 'Macédoine du Nord', 'Densité': 82.7, 'Population': '2125971', 'Superficie': '25713'}
+{'Rang': 127, 'Pays': 'Brunei', 'Densité': 82.4, 'Population': '464478', 'Superficie': '5765'}
+{'Rang': 128, 'Pays': 'Birmanie', 'Densité': 82.4, 'Population': '56590071', 'Superficie': '676578'}
+{'Rang': 129, 'Pays': 'Maroc', 'Densité': 81.1, 'Population': '36471769', 'Superficie': '446550'}
+{'Rang': 130, 'Pays': 'Eswatini', 'Densité': 80.9, 'Population': '1104479', 'Superficie': '17363'}
+{'Rang': 131, 'Pays': "Côte d'Ivoire", 'Densité': 78.3, 'Population': '26378274', 'Superficie': '322462'}
+{'Rang': 132, 'Pays': 'Polynésie française', 'Densité': 78.1, 'Population': '290218', 'Superficie': '4167'}
+{'Rang': 133, 'Pays': 'Ouzbékistan', 'Densité': 76.1, 'Population': '30565411', 'Superficie': '447400'}
+{'Rang': 134, 'Pays': 'Ukraine', 'Densité': 76.0, 'Population': '44983019', 'Superficie': '603549'}
+{'Rang': 135, 'Pays': 'Tunisie', 'Densité': 75.0, 'Population': '11722038', 'Superficie': '163610'}
+{'Rang': 136, 'Pays': 'Lesotho', 'Densité': 74.5, 'Population': '1924381', 'Superficie': '30355'}
+{'Rang': 137, 'Pays': 'Croatie', 'Densité': 74.4, 'Population': '4076246', 'Superficie': '56594'}
+{'Rang': 138, 'Pays': 'Îles Cook', 'Densité': 72.5, 'Population': '21923', 'Superficie': '240'}
+{'Rang': 139, 'Pays': 'Nouvelle-Zélande', 'Densité': 72.5, 'Population': '', 'Superficie': ''}
+{'Rang': 140, 'Pays': 'Burkina Faso', 'Densité': 72.2, 'Population': '20835401', 'Superficie': '274400'}
+{'Rang': 141, 'Pays': 'Samoa', 'Densité': 69.9, 'Population': '193483', 'Superficie': '2944'}
+{'Rang': 142, 'Pays': 'Irlande', 'Densité': 69.7, 'Population': '5176569', 'Superficie': '70273'}
+{'Rang': 143, 'Pays': 'Bosnie-Herzégovine', 'Densité': 68.7, 'Population': '3835586', 'Superficie': '51197'}
+{'Rang': 144, 'Pays': 'Équateur', 'Densité': 67.9, 'Population': '16904867', 'Superficie': '283520'}
+{'Rang': 145, 'Pays': 'Guinée-Bissau', 'Densité': 67.8, 'Population': '1833247', 'Superficie': '36120'}
+{'Rang': 146, 'Pays': 'Mexique', 'Densité': 67.3, 'Population': '128649565', 'Superficie': '1964375'}
+{'Rang': 147, 'Pays': 'Tanzanie', 'Densité': 66.7, 'Population': '58552845', 'Superficie': '945087'}
+{'Rang': 148, 'Pays': 'Tadjikistan', 'Densité': 65.1, 'Population': '8873669', 'Superficie': '143100'}
+{'Rang': 149, 'Pays': 'Bulgarie', 'Densité': 64.8, 'Population': '6966899', 'Superficie': '110944'}
+{'Rang': 150, 'Pays': 'Géorgie', 'Densité': 56.2, 'Population': '3997000', 'Superficie': '69700'}
+{'Rang': 151, 'Pays': 'Panama', 'Densité': 56.0, 'Population': '4285850', 'Superficie': '75420'}
+{'Rang': 152, 'Pays': 'Afghanistan', 'Densité': 55.7, 'Population': '36643815', 'Superficie': '652230'}
+{'Rang': 153, 'Pays': 'Yémen', 'Densité': 54.8, 'Population': '28036829', 'Superficie': '527968'}
+{'Rang': 154, 'Pays': 'Guinée', 'Densité': 53.1, 'Population': '12527440', 'Superficie': '245857'}
+{'Rang': 155, 'Pays': 'Nicaragua', 'Densité': 52.2, 'Population': '6203441', 'Superficie': '129494'}
+{'Rang': 156, 'Pays': 'Cameroun', 'Densité': 52.2, 'Population': '27744989', 'Superficie': '475440'}
+{'Rang': 157, 'Pays': 'Montserrat', 'Densité': 52.0, 'Population': '5164', 'Superficie': '102'}
+{'Rang': 158, 'Pays': 'Érythrée', 'Densité': 51.4, 'Population': '6081196', 'Superficie': '117600'}
+{'Rang': 159, 'Pays': 'Liberia', 'Densité': 50.4, 'Population': '5073296', 'Superficie': '111369'}
+{'Rang': 160, 'Pays': 'Iran', 'Densité': 50.4, 'Population': '84923314', 'Superficie': '1648195'}
+{'Rang': 161, 'Pays': 'Fidji', 'Densité': 49.9, 'Population': '935974', 'Superficie': '18270'}
+{'Rang': 162, 'Pays': 'Palaos', 'Densité': 47.7, 'Population': '21291', 'Superficie': '459'}
+{'Rang': 163, 'Pays': 'Afrique du Sud', 'Densité': 47.3, 'Population': '58775022', 'Superficie': '1219912'}
+{'Rang': 164, 'Pays': 'Monténégro', 'Densité': 46.8, 'Population': '609859', 'Superficie': '13812'}
+{'Rang': 165, 'Pays': 'Guinée équatoriale', 'Densité': 46.8, 'Population': '1403000', 'Superficie': '28051'}
+{'Rang': 166, 'Pays': 'Biélorussie', 'Densité': 46.6, 'Population': '9477918', 'Superficie': '207600'}
+{'Rang': 167, 'Pays': 'Lituanie', 'Densité': 45.9, 'Population': '2731464', 'Superficie': '65303'}
+{'Rang': 168, 'Pays': 'Madagascar', 'Densité': 45.1, 'Population': '26955737', 'Superficie': '587041'}
+{'Rang': 169, 'Pays': 'Colombie', 'Densité': 44.6, 'Population': '49084841', 'Superficie': '1141748'}
+{'Rang': 170, 'Pays': 'Zimbabwe', 'Densité': 43.7, 'Population': '14546314', 'Superficie': '390745'}
+{'Rang': 171, 'Pays': 'Djibouti', 'Densité': 41.9, 'Population': '921804', 'Superficie': '23200'}
+{'Rang': 172, 'Pays': 'Bahamas', 'Densité': 39.9, 'Population': '337721', 'Superficie': '13943'}
+{'Rang': 173, 'Pays': 'Mozambique', 'Densité': 38.8, 'Population': '27233789', 'Superficie': '801590'}
+{'Rang': 174, 'Pays': 'Îles Turques-et-Caïques', 'Densité': 37.9, 'Population': '51507', 'Superficie': '948'}
+{'Rang': 175, 'Pays': 'République démocratique du Congo', 'Densité': 37.1, 'Population': '101780263', 'Superficie': '2345410'}
+{'Rang': 176, 'Pays': 'Venezuela', 'Densité': 36.7, 'Population': '28436066', 'Superficie': '916445'}
+{'Rang': 177, 'Pays': 'États-Unis', 'Densité': 35.7, 'Population': '328239523', 'Superficie': '9833517'}
+{'Rang': 178, 'Pays': 'Îles Féroé', 'Densité': 35.5, 'Population': '52110', 'Superficie': '1393'}
+{'Rang': 179, 'Pays': 'Kirghizistan', 'Densité': 32.0, 'Population': '5964897', 'Superficie': '198500'}
+{'Rang': 180, 'Pays': 'Lettonie', 'Densité': 31.0, 'Population': '1928600', 'Superficie': '64559'}
+{'Rang': 181, 'Pays': 'Estonie', 'Densité': 30.8, 'Population': '1228624', 'Superficie': '45339'}
+{'Rang': 182, 'Pays': 'Laos', 'Densité': 30.2, 'Population': '7447396', 'Superficie': '236800'}
+{'Rang': 183, 'Pays': 'Saint-Pierre-et-Miquelon', 'Densité': 27.6, 'Population': '6274', 'Superficie': '242'}
+{'Rang': 184, 'Pays': 'Pérou', 'Densité': 25.4, 'Population': '31914989', 'Superficie': '1285216'}
+{'Rang': 185, 'Pays': 'Brésil', 'Densité': 25.2, 'Population': '211715973', 'Superficie': '8514876'}
+{'Rang': 186, 'Pays': 'Angola', 'Densité': 24.7, 'Population': '32522339', 'Superficie': '1246700'}
+{'Rang': 187, 'Pays': 'Chili', 'Densité': 24.5, 'Population': '18186770', 'Superficie': '755276'}
+{'Rang': 188, 'Pays': 'Suède', 'Densité': 24.3, 'Population': '10313447', 'Superficie': '449965'}
+{'Rang': 189, 'Pays': 'Somalie', 'Densité': 24.2, 'Population': '11259029', 'Superficie': '637657'}
+{'Rang': 190, 'Pays': 'Zambie', 'Densité': 23.7, 'Population': '15066266', 'Superficie': '752614'}
+{'Rang': 191, 'Pays': 'Soudan', 'Densité': 23.5, 'Population': '43120843', 'Superficie': '1886068'}
+{'Rang': 192, 'Pays': 'Vanuatu', 'Densité': 23.1, 'Population': '298333', 'Superficie': '12189'}
+{'Rang': 193, 'Pays': 'Salomon', 'Densité': 22.3, 'Population': '685097', 'Superficie': '28450'}
+{'Rang': 194, 'Pays': 'Bhoutan', 'Densité': 21.4, 'Population': '782318', 'Superficie': '38394'}
+{'Rang': 195, 'Pays': 'Soudan du Sud', 'Densité': 21.1, 'Population': '10561244', 'Superficie': '619745'}
+{'Rang': 196, 'Pays': 'Uruguay', 'Densité': 19.8, 'Population': '3387605', 'Superficie': '176220'}
+{'Rang': 197, 'Pays': 'Papouasie-Nouvelle-Guinée', 'Densité': 18.6, 'Population': '8,3 millions', 'Superficie': '462840'}
+{'Rang': 198, 'Pays': 'Finlande', 'Densité': 18.2, 'Population': '5522015', 'Superficie': '338145'}
+{'Rang': 199, 'Pays': 'Niger', 'Densité': 17.6, 'Population': '22772361', 'Superficie': '1267000'}
+{'Rang': 200, 'Pays': 'Algérie', 'Densité': 17.6, 'Population': '43900000', 'Superficie': '2381741'}
+{'Rang': 201, 'Pays': 'Paraguay', 'Densité': 17.4, 'Population': '7191685', 'Superficie': '406752'}
+{'Rang': 202, 'Pays': 'Belize', 'Densité': 16.8, 'Population': '399598', 'Superficie': '22966'}
+{'Rang': 203, 'Pays': 'Argentine', 'Densité': 16.3, 'Population': '45479118', 'Superficie': '2791810'}
+{'Rang': 204, 'Pays': 'République du Congo', 'Densité': 15.8, 'Population': '5293070', 'Superficie': '342000'}
+{'Rang': 205, 'Pays': 'Mali', 'Densité': 15.7, 'Population': '19553397', 'Superficie': '1241238'}
+{'Rang': 206, 'Pays': 'Oman', 'Densité': 15.6, 'Population': '4664844', 'Superficie': '309500'}
+{'Rang': 207, 'Pays': 'Arabie saoudite', 'Densité': 15.6, 'Population': '34173498', 'Superficie': '2149690'}
+{'Rang': 208, 'Pays': 'Nouvelle-Calédonie', 'Densité': 15.3, 'Population': '271407', 'Superficie': '18575.5'}
+{'Rang': 209, 'Pays': 'Norvège', 'Densité': 14.7, 'Population': '5367580', 'Superficie': '385207'}
+{'Rang': 210, 'Pays': 'Turkménistan', 'Densité': 12.5, 'Population': '5411012', 'Superficie': '488100'}
+{'Rang': 211, 'Pays': 'Tchad', 'Densité': 12.2, 'Population': '16877357', 'Superficie': '1284000'}
+{'Rang': 212, 'Pays': 'Sainte-Hélène, Ascension et Tristan da Cunha', 'Densité': 10.4, 'Population': '5633', 'Superficie': '410'}
+{'Rang': 213, 'Pays': 'Bolivie', 'Densité': 10.4, 'Population': '11639909', 'Superficie': '1098581'}
+{'Rang': 214, 'Pays': 'Russie', 'Densité': 8.8, 'Population': '146780700', 'Superficie': '17125191'}
+{'Rang': 215, 'Pays': 'Gabon', 'Densité': 8.0, 'Population': '2230908', 'Superficie': '267667'}
+{'Rang': 216, 'Pays': 'République centrafricaine', 'Densité': 7.6, 'Population': '5990855', 'Superficie': '622984'}
+{'Rang': 217, 'Pays': 'Kazakhstan', 'Densité': 6.8, 'Population': '19091949', 'Superficie': '2724900'}
+{'Rang': 218, 'Pays': 'Niue', 'Densité': 6.2, 'Population': '1612', 'Superficie': '260'}
+{'Rang': 219, 'Pays': 'Mauritanie', 'Densité': 4.4, 'Population': '4005475', 'Superficie': '1030700'}
+{'Rang': 220, 'Pays': 'Canada', 'Densité': 4.1, 'Population': '38005238', 'Superficie': '9984670'}
+{'Rang': 221, 'Pays': 'Botswana', 'Densité': 4.1, 'Population': '2317233', 'Superficie': '581726'}
+{'Rang': 222, 'Pays': 'Guyana', 'Densité': 4.0, 'Population': '750204', 'Superficie': '214970'}
+{'Rang': 223, 'Pays': 'Libye', 'Densité': 3.7, 'Population': '6890535', 'Superficie': '1759540'}
+{'Rang': 224, 'Pays': 'Suriname', 'Densité': 3.6, 'Population': '597927', 'Superficie': '163270'}
+{'Rang': 225, 'Pays': 'Guyane', 'Densité': 3.5, 'Population': '268700', 'Superficie': '83846'}
+{'Rang': 226, 'Pays': 'Islande', 'Densité': 3.4, 'Population': '362860', 'Superficie': '102775'}
+{'Rang': 227, 'Pays': 'Australie', 'Densité': 3.2, 'Population': '25671900', 'Superficie': '7692060'}
+{'Rang': 228, 'Pays': 'Namibie', 'Densité': 3.1, 'Population': '2630073', 'Superficie': '825418'}
+{'Rang': 229, 'Pays': 'Sahara occidental', 'Densité': 2.1, 'Population': '603253', 'Superficie': '266000'}
+{'Rang': 230, 'Pays': 'Mongolie', 'Densité': 2.0, 'Population': '3168026', 'Superficie': '1564116'}
+{'Rang': 231, 'Pays': 'Malouines', 'Densité': 0.2, 'Population': '3198', 'Superficie': '12173'}
+{'Rang': 232, 'Pays': 'Groenland', 'Densité': 0.1, 'Population': '56081', 'Superficie': '2166086'}
+
+----- Question 5:
+Please enter a country
+France
+You entered France, checking...
+France found! Please wait for data, It may take some time unfortunately :(
+LIEN: https://fr.wikipedia.org/wiki/Afghanistan
+LIEN: https://fr.wikipedia.org/wiki/Afrique du Sud
+LIEN: https://fr.wikipedia.org/wiki/Albanie
+LIEN: https://fr.wikipedia.org/wiki/Algérie
+LIEN: https://fr.wikipedia.org/wiki/Allemagne
+LIEN: https://fr.wikipedia.org/wiki/Andorre
+LIEN: https://fr.wikipedia.org/wiki/Angola
+LIEN: https://fr.wikipedia.org/wiki/Anguilla
+LIEN: https://fr.wikipedia.org/wiki/Antigua-et-Barbuda
+LIEN: https://fr.wikipedia.org/wiki/Arabie saoudite
+LIEN: https://fr.wikipedia.org/wiki/Argentine
+LIEN: https://fr.wikipedia.org/wiki/Arménie
+LIEN: https://fr.wikipedia.org/wiki/Aruba
+LIEN: https://fr.wikipedia.org/wiki/Australie
+LIEN: https://fr.wikipedia.org/wiki/Autriche
+LIEN: https://fr.wikipedia.org/wiki/Azerbaïdjan
+LIEN: https://fr.wikipedia.org/wiki/Bahamas
+LIEN: https://fr.wikipedia.org/wiki/Bahreïn
+LIEN: https://fr.wikipedia.org/wiki/Bangladesh
+LIEN: https://fr.wikipedia.org/wiki/Barbade
+LIEN: https://fr.wikipedia.org/wiki/Belgique
+LIEN: https://fr.wikipedia.org/wiki/Belize
+LIEN: https://fr.wikipedia.org/wiki/Bénin
+LIEN: https://fr.wikipedia.org/wiki/Bermudes
+LIEN: https://fr.wikipedia.org/wiki/Bhoutan
+LIEN: https://fr.wikipedia.org/wiki/Biélorussie
+LIEN: https://fr.wikipedia.org/wiki/Birmanie
+LIEN: https://fr.wikipedia.org/wiki/Bolivie
+LIEN: https://fr.wikipedia.org/wiki/Bosnie-Herzégovine
+LIEN: https://fr.wikipedia.org/wiki/Botswana
+LIEN: https://fr.wikipedia.org/wiki/Brésil
+LIEN: https://fr.wikipedia.org/wiki/Brunei
+LIEN: https://fr.wikipedia.org/wiki/Bulgarie
+LIEN: https://fr.wikipedia.org/wiki/Burkina Faso
+LIEN: https://fr.wikipedia.org/wiki/Burundi
+LIEN: https://fr.wikipedia.org/wiki/Îles Caïmans
+LIEN: https://fr.wikipedia.org/wiki/Cambodge
+LIEN: https://fr.wikipedia.org/wiki/Cameroun
+LIEN: https://fr.wikipedia.org/wiki/Canada
+LIEN: https://fr.wikipedia.org/wiki/Cap-Vert
+LIEN: https://fr.wikipedia.org/wiki/République centrafricaine
+LIEN: https://fr.wikipedia.org/wiki/Chili
+LIEN: https://fr.wikipedia.org/wiki/Chine
+LIEN: https://fr.wikipedia.org/wiki/Chypre (pays)
+LIEN: https://fr.wikipedia.org/wiki/Colombie
+LIEN: https://fr.wikipedia.org/wiki/Comores (pays)
+LIEN: https://fr.wikipedia.org/wiki/République du Congo
+LIEN: https://fr.wikipedia.org/wiki/République démocratique du Congo
+LIEN: https://fr.wikipedia.org/wiki/Îles Cook
+LIEN: https://fr.wikipedia.org/wiki/Royaume de Nouvelle-Zélande
+LIEN: https://fr.wikipedia.org/wiki/Corée du Nord
+LIEN: https://fr.wikipedia.org/wiki/Corée du Sud
+LIEN: https://fr.wikipedia.org/wiki/Costa Rica
+LIEN: https://fr.wikipedia.org/wiki/Côte d'Ivoire
+LIEN: https://fr.wikipedia.org/wiki/Croatie
+LIEN: https://fr.wikipedia.org/wiki/Cuba
+LIEN: https://fr.wikipedia.org/wiki/Curaçao
+LIEN: https://fr.wikipedia.org/wiki/Danemark
+LIEN: https://fr.wikipedia.org/wiki/Djibouti
+LIEN: https://fr.wikipedia.org/wiki/République dominicaine
+LIEN: https://fr.wikipedia.org/wiki/Dominique (pays)
+LIEN: https://fr.wikipedia.org/wiki/Égypte
+LIEN: https://fr.wikipedia.org/wiki/Émirats arabes unis
+LIEN: https://fr.wikipedia.org/wiki/Équateur (pays)
+LIEN: https://fr.wikipedia.org/wiki/Érythrée
+LIEN: https://fr.wikipedia.org/wiki/Espagne
+LIEN: https://fr.wikipedia.org/wiki/Estonie
+LIEN: https://fr.wikipedia.org/wiki/Eswatini
+LIEN: https://fr.wikipedia.org/wiki/États-Unis
+LIEN: https://fr.wikipedia.org/wiki/Éthiopie
+LIEN: https://fr.wikipedia.org/wiki/Îles Féroé
+LIEN: https://fr.wikipedia.org/wiki/Fidji
+LIEN: https://fr.wikipedia.org/wiki/Finlande
+LIEN: https://fr.wikipedia.org/wiki/France
+LIEN: https://fr.wikipedia.org/wiki/Gabon
+LIEN: https://fr.wikipedia.org/wiki/Gambie
+LIEN: https://fr.wikipedia.org/wiki/Géorgie (pays)
+LIEN: https://fr.wikipedia.org/wiki/Ghana
+LIEN: https://fr.wikipedia.org/wiki/Gibraltar
+LIEN: https://fr.wikipedia.org/wiki/Grèce
+LIEN: https://fr.wikipedia.org/wiki/Grenade (pays)
+LIEN: https://fr.wikipedia.org/wiki/Groenland
+LIEN: https://fr.wikipedia.org/wiki/Guadeloupe
+LIEN: https://fr.wikipedia.org/wiki/Guam
+LIEN: https://fr.wikipedia.org/wiki/Guatemala
+LIEN: https://fr.wikipedia.org/wiki/Bailliage de Guernesey
+LIEN: https://fr.wikipedia.org/wiki/Bailliage de Jersey
+LIEN: https://fr.wikipedia.org/wiki/Bailliage de Guernesey
+LIEN: https://fr.wikipedia.org/wiki/Bailliage de Jersey
+LIEN: https://fr.wikipedia.org/wiki/Guinée
+LIEN: https://fr.wikipedia.org/wiki/Guinée-Bissau
+LIEN: https://fr.wikipedia.org/wiki/Guinée équatoriale
+LIEN: https://fr.wikipedia.org/wiki/Guyana
+LIEN: https://fr.wikipedia.org/wiki/Guyane
+LIEN: https://fr.wikipedia.org/wiki/Haïti
+LIEN: https://fr.wikipedia.org/wiki/Honduras
+LIEN: https://fr.wikipedia.org/wiki/Hong Kong
+LIEN: https://fr.wikipedia.org/wiki/Hongrie
+LIEN: https://fr.wikipedia.org/wiki/Inde
+LIEN: https://fr.wikipedia.org/wiki/Indonésie
+LIEN: https://fr.wikipedia.org/wiki/Irak
+LIEN: https://fr.wikipedia.org/wiki/Iran
+LIEN: https://fr.wikipedia.org/wiki/Irlande (pays)
+LIEN: https://fr.wikipedia.org/wiki/Islande
+LIEN: https://fr.wikipedia.org/wiki/Israël
+LIEN: https://fr.wikipedia.org/wiki/Italie
+LIEN: https://fr.wikipedia.org/wiki/Jamaïque
+LIEN: https://fr.wikipedia.org/wiki/Japon
+LIEN: https://fr.wikipedia.org/wiki/Jordanie
+LIEN: https://fr.wikipedia.org/wiki/Kazakhstan
+LIEN: https://fr.wikipedia.org/wiki/Kenya
+LIEN: https://fr.wikipedia.org/wiki/Kirghizistan
+LIEN: https://fr.wikipedia.org/wiki/Kiribati
+LIEN: https://fr.wikipedia.org/wiki/Koweït
+LIEN: https://fr.wikipedia.org/wiki/Laos
+LIEN: https://fr.wikipedia.org/wiki/Lesotho
+LIEN: https://fr.wikipedia.org/wiki/Lettonie
+LIEN: https://fr.wikipedia.org/wiki/Liban
+LIEN: https://fr.wikipedia.org/wiki/Liberia
+LIEN: https://fr.wikipedia.org/wiki/Libye
+LIEN: https://fr.wikipedia.org/wiki/Liechtenstein
+LIEN: https://fr.wikipedia.org/wiki/Lituanie
+LIEN: https://fr.wikipedia.org/wiki/Luxembourg
+LIEN: https://fr.wikipedia.org/wiki/Macao
+LIEN: https://fr.wikipedia.org/wiki/Macédoine du Nord
+LIEN: https://fr.wikipedia.org/wiki/Madagascar
+LIEN: https://fr.wikipedia.org/wiki/Malaisie
+LIEN: https://fr.wikipedia.org/wiki/Malawi
+LIEN: https://fr.wikipedia.org/wiki/Maldives
+LIEN: https://fr.wikipedia.org/wiki/Mali
+LIEN: https://fr.wikipedia.org/wiki/Îles Malouines
+LIEN: https://fr.wikipedia.org/wiki/Malte
+LIEN: https://fr.wikipedia.org/wiki/Île de Man
+LIEN: https://fr.wikipedia.org/wiki/Îles Mariannes du Nord
+LIEN: https://fr.wikipedia.org/wiki/Maroc
+LIEN: https://fr.wikipedia.org/wiki/Îles Marshall
+LIEN: https://fr.wikipedia.org/wiki/Martinique
+LIEN: https://fr.wikipedia.org/wiki/Maurice (pays)
+LIEN: https://fr.wikipedia.org/wiki/Mauritanie
+LIEN: https://fr.wikipedia.org/wiki/Mayotte
+LIEN: https://fr.wikipedia.org/wiki/Mexique
+LIEN: https://fr.wikipedia.org/wiki/États fédérés de Micronésie
+LIEN: https://fr.wikipedia.org/wiki/Moldavie
+LIEN: https://fr.wikipedia.org/wiki/Monaco
+LIEN: https://fr.wikipedia.org/wiki/Mongolie
+LIEN: https://fr.wikipedia.org/wiki/Monténégro
+LIEN: https://fr.wikipedia.org/wiki/Montserrat (Antilles)
+LIEN: https://fr.wikipedia.org/wiki/Mozambique
+LIEN: https://fr.wikipedia.org/wiki/Namibie
+LIEN: https://fr.wikipedia.org/wiki/Nauru
+LIEN: https://fr.wikipedia.org/wiki/Népal
+LIEN: https://fr.wikipedia.org/wiki/Nicaragua
+LIEN: https://fr.wikipedia.org/wiki/Niger
+LIEN: https://fr.wikipedia.org/wiki/Nigeria
+LIEN: https://fr.wikipedia.org/wiki/Niue
+LIEN: https://fr.wikipedia.org/wiki/Norvège
+LIEN: https://fr.wikipedia.org/wiki/Nouvelle-Calédonie
+LIEN: https://fr.wikipedia.org/wiki/Oman
+LIEN: https://fr.wikipedia.org/wiki/Ouganda
+LIEN: https://fr.wikipedia.org/wiki/Ouzbékistan
+LIEN: https://fr.wikipedia.org/wiki/Pakistan
+LIEN: https://fr.wikipedia.org/wiki/Palaos
+LIEN: https://fr.wikipedia.org/wiki/Palestine (État)
+LIEN: https://fr.wikipedia.org/wiki/Panama
+LIEN: https://fr.wikipedia.org/wiki/Papouasie-Nouvelle-Guinée
+LIEN: https://fr.wikipedia.org/wiki/Paraguay
+LIEN: https://fr.wikipedia.org/wiki/Pays-Bas
+LIEN: https://fr.wikipedia.org/wiki/Pérou
+LIEN: https://fr.wikipedia.org/wiki/Philippines
+LIEN: https://fr.wikipedia.org/wiki/Pologne
+LIEN: https://fr.wikipedia.org/wiki/Polynésie française
+LIEN: https://fr.wikipedia.org/wiki/Porto Rico
+LIEN: https://fr.wikipedia.org/wiki/Portugal
+LIEN: https://fr.wikipedia.org/wiki/Qatar
+LIEN: https://fr.wikipedia.org/wiki/La Réunion
+LIEN: https://fr.wikipedia.org/wiki/Roumanie
+LIEN: https://fr.wikipedia.org/wiki/Royaume-Uni
+LIEN: https://fr.wikipedia.org/wiki/Russie
+LIEN: https://fr.wikipedia.org/wiki/Rwanda
+LIEN: https://fr.wikipedia.org/wiki/Sahara occidental
+LIEN: https://fr.wikipedia.org/wiki/Saint-Christophe-et-Niévès
+LIEN: https://fr.wikipedia.org/wiki/Saint-Marin
+LIEN: https://fr.wikipedia.org/wiki/Saint-Martin (royaume des Pays-Bas)
+LIEN: https://fr.wikipedia.org/wiki/Saint-Pierre-et-Miquelon
+LIEN: https://fr.wikipedia.org/wiki/Saint-Vincent-et-les-Grenadines
+LIEN: https://fr.wikipedia.org/wiki/Sainte-Hélène, Ascension et Tristan da Cunha
+LIEN: https://fr.wikipedia.org/wiki/Sainte-Lucie
+LIEN: https://fr.wikipedia.org/wiki/Îles Salomon
+LIEN: https://fr.wikipedia.org/wiki/Salvador
+LIEN: https://fr.wikipedia.org/wiki/Samoa
+LIEN: https://fr.wikipedia.org/wiki/Samoa américaines
+LIEN: https://fr.wikipedia.org/wiki/Sao Tomé-et-Principe
+LIEN: https://fr.wikipedia.org/wiki/Sénégal
+LIEN: https://fr.wikipedia.org/wiki/Serbie
+LIEN: https://fr.wikipedia.org/wiki/Seychelles
+LIEN: https://fr.wikipedia.org/wiki/Sierra Leone
+LIEN: https://fr.wikipedia.org/wiki/Singapour
+LIEN: https://fr.wikipedia.org/wiki/Slovaquie
+LIEN: https://fr.wikipedia.org/wiki/Slovénie
+LIEN: https://fr.wikipedia.org/wiki/Somalie
+LIEN: https://fr.wikipedia.org/wiki/Soudan
+LIEN: https://fr.wikipedia.org/wiki/Soudan du Sud
+LIEN: https://fr.wikipedia.org/wiki/Sri Lanka
+LIEN: https://fr.wikipedia.org/wiki/Suède
+LIEN: https://fr.wikipedia.org/wiki/Suisse
+LIEN: https://fr.wikipedia.org/wiki/Suriname
+LIEN: https://fr.wikipedia.org/wiki/Syrie
+LIEN: https://fr.wikipedia.org/wiki/Tadjikistan
+LIEN: https://fr.wikipedia.org/wiki/Taïwan
+LIEN: https://fr.wikipedia.org/wiki/Tanzanie
+LIEN: https://fr.wikipedia.org/wiki/Tchad
+LIEN: https://fr.wikipedia.org/wiki/Tchéquie
+LIEN: https://fr.wikipedia.org/wiki/Thaïlande
+LIEN: https://fr.wikipedia.org/wiki/Timor oriental
+LIEN: https://fr.wikipedia.org/wiki/Togo
+LIEN: https://fr.wikipedia.org/wiki/Tokelau
+LIEN: https://fr.wikipedia.org/wiki/Tonga
+LIEN: https://fr.wikipedia.org/wiki/Trinité-et-Tobago
+LIEN: https://fr.wikipedia.org/wiki/Tunisie
+LIEN: https://fr.wikipedia.org/wiki/Turkménistan
+LIEN: https://fr.wikipedia.org/wiki/Îles Turques-et-Caïques
+LIEN: https://fr.wikipedia.org/wiki/Turquie
+LIEN: https://fr.wikipedia.org/wiki/Tuvalu
+LIEN: https://fr.wikipedia.org/wiki/Ukraine
+LIEN: https://fr.wikipedia.org/wiki/Uruguay
+LIEN: https://fr.wikipedia.org/wiki/Vanuatu
+LIEN: https://fr.wikipedia.org/wiki/Vatican
+LIEN: https://fr.wikipedia.org/wiki/Venezuela
+LIEN: https://fr.wikipedia.org/wiki/Îles Vierges britanniques
+LIEN: https://fr.wikipedia.org/wiki/Îles Vierges des États-Unis
+LIEN: https://fr.wikipedia.org/wiki/Viêt Nam
+LIEN: https://fr.wikipedia.org/wiki/Wallis-et-Futuna
+LIEN: https://fr.wikipedia.org/wiki/Yémen
+LIEN: https://fr.wikipedia.org/wiki/Zambie
+LIEN: https://fr.wikipedia.org/wiki/Zimbabwe
+Digging is over !
+ {'Rang': 95, 'Pays': 'France', 'Densité': 119.1, 'Population': '67848156', 'Superficie': '632734'}
