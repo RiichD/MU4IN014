@@ -11,96 +11,133 @@ tree = ET.parse(local_input, parser=p)
 root = tree.getroot()
 print(f"XML File loaded and parsed, root is {root.tag}")
 
-@route("/publications/<id:re:id-[0-9]+>")
+#Variables globales
+PUB_LIMIT = 100 #Le nombre de publications qu'on veut obtenir pour "/publications"
+
+
+@route("/publications/<id:int>")
 def publications(id):
 	"""
+	La fonction permet d'obtenir la publication correspondante avec l'id.
 	On suppose que l'id commence à partir de 1.
-	La syntaxe nécessite sur l'URL est de la forme : /publications/id-n, avec n un nombre.
+	Elle retourne une chaîne de caractère contenant les informations.
 	"""
-	id = re.sub("id-", "", id)
-	id = int(id)
 	res = ""
 	nb_pub = 0
+	if id <= 0:
+		redirect("/error/403/" + f"{id} is not between 1 or more and the id must be an integer, try again.")
 	for child in root:
 		if nb_pub == id-1:
 			for i in range(len(child)):
-				res += dumps([child[i].text]) + "<br/>"
-			res = res + "<br/>"
-			return res
+				res += child[i].tag + " : " + child[i].text
+				if i < len(child)-1:
+					res += '<br/>' #Newline
+			return dumps([res])
 		else:
 			nb_pub += 1
+	redirect("/error/404/"+"Page not found") #Erreur s'il n'y a aucune publication
 
-
-@route("/publications/<limit:int>")
-def publications(limit):
-	res = ""
-	nb_pub = 0
+@route("/publications")
+def publications():
+	"""
+	La fonction permet d'obtenir les publications les limit premières publications.
+	Un paramètre limit peut être utilisé pour modifier cette limite sur l'URL. 
+	Sinon, il est aussi possible de modifier via la variable globale PUB_LIMIT.
+	La fonction retourne une liste des publications.
+	"""
+	res = [] #Les informations récoltées sont stockées dans cette liste
+	limit = PUB_LIMIT
+	param = request.query.get("limit") #Recherche des paramètres disponibles s'il y en a
+	if param is not None: #Vérifie s'il y a un argument
+		try:
+			limit = int(param)
+		except ValueError as exc:
+			redirect("/error/403/" + f"{param} is not a number, try again.")
 	for child in root:
+		tmp = "" #Stocke les informations temporairement
+		isNull = True
 		for i in range(len(child)):
-			res += dumps([child[i].text]) + "<br/>"
-		res = res + "<br/>"
-		nb_pub += 1
-		if nb_pub == limit:
+			if child[i].text != None:
+				tmp += child[i].tag + " : " + child[i].text
+				if i < len(child)-1:
+					tmp += '<br/>' #Newline
+				isNull = False
+		if not isNull:
+			res.append(dumps([tmp]) + '<br/>''<br/>') #Formatage
+		if len(res) == limit:
 			return res
+	redirect("/error/404/"+"Page not found")
 
 @route("/authors/<name>")
 def authors(name):
-	nb_pub_author = 0
-	nb_pub_coauthor = 0
-	for child in root:
-		author = False
-		if len(child):
-			for data in child: #Boucle permettant de vérifier que la donnée n'est pas vide
-				if data.text != None and name in data.text:
-					if name in child[0].text:
-						author = True
-					for i in range(len(child)):
-						if child[i].text != None:
-							if "author" == child[i].tag and name == child[i].text and author:
-								print("Auteur: " , child[i].text)
-								nb_pub_author += 1
-							elif "author" == child[i].tag and name == child[i].text and not author:
-								print("Coauteur: ", child[i].text)
-								nb_pub_coauthor += 1
-	res = str(nb_pub_author + nb_pub_coauthor) + "<br/>" 
-	res += "Authors: " + str(nb_pub_author) + "<br/>" 
-	res += "Coauthors: " + str(nb_pub_coauthor) + "<br/>" 
-	return "Nombre de publications: " + res
-
+	"""
+	La fonction retourne le nombre de fois que name a publié en tant que coauteur et le nombre de coauteurs.
+	"""
+	res = [] #Liste des coauteurs
+	estCoauteur = 0 #Le nombre de fois que l'auteur est un coauteur
+	try:
+		for child in root:
+			if len(child):
+				for data in child: #Boucle permettant de vérifier que la donnée n'est pas vide
+					if data.text != None and name in data.text:
+						isCoauteur = False
+						for i in range(len(child)): #Compte le nombre d'auteurs
+							if child[i].text != None:
+								author = dumps([(child[i].tag + " : " +child[i].text)])+ "<br/>"
+								if "author" == child[i].tag and name != child[i].text and author not in res:
+									print(author)
+									res.append(author)
+									isCoauteur = True
+						if isCoauteur: #S'il y a plus d'un auteur hormis l'auteur lui même, alors c'est un coauteur
+							estCoauteur += 1
+	except Exception as exc: #Capture les erreurs inattendues
+		print("An error occurred: ", exc)
+		redirect("/error/403/" + f"An error occurred: " + exc)
+	return f"{estCoauteur} publications dont il est coauteur avec {len(res)} coauteurs."+'<br/>'
+	
 @route("/authors/<name>/publications")
 def auth_pub(name):
 	"""
-	Le premier autheur est l'autheur. Le reste des autheurs sont des coautheurs.
+	La fonction retourne la liste les publications de name.
 	"""
-	res = ""
-	for child in root:
-		if len(child):
-			for data in child: #Boucle permettant de vérifier que la donnée n'est pas vide
-				if data.text != None and name in data.text:
-					if name == child[0].text and 'author' == child[0].tag:
-						for i in range(len(child)):
-							if "title" == child[i].tag:
-								print(child[i].text)
-								res = res + dumps([(child[i].tag +" : " +child[i].text)])+ "<br/>"
-	return "Titres de l'auteur " + name + ':<br/>' + res
+	res = []
+	try:
+		for child in root:
+			if len(child):
+				for data in child: #Boucle permettant de vérifier que la donnée n'est pas vide
+					if data.text != None and name in data.text:
+						if 'author' == child[0].tag:
+							for i in range(len(child)):
+								if "title" == child[i].tag:
+									print(child[i].text)
+									res.append(dumps([(child[i].tag + " : " +child[i].text)]) + "<br/>")
+	except Exception as exc: #Capture les erreurs inattendues
+		print("An error occurred: ", exc)
+		redirect("/error/403/" + f"An error occurred: " + exc)
+	res.insert(0, f"Les titres de l'auteur {name}:" + '<br/>')
+	return res
 
 @route("/authors/<name>/coauthors")
 def auth_pub(name):
 	"""
-	Un coautheur se trouve à partir de la 2ème liste des autheurs d'une publication.
+	La fonction retourne tout les coauteurs de name.
 	"""
-	res = ""
-	list_coauthor = [] #Evite d'avoir des répétitions
-	for child in root:
-		if len(child):
-			for data in child: #Boucle permettant de vérifier que la donnée n'est pas vide
-				if data.text != None and name in data.text:
-					for i in range(len(child)):
-						if name == child[0].text and name != child[i].text and "author" == child[i].tag and child[i].text not in list_coauthor:
-							print(child[i].text)
-							list_coauthor.append(child[i].text)
-							res = res + dumps([(child[i].tag +" : " +child[i].text)])+ "<br/>"
-	return f"Coautheurs de {name}: " + "<br/>" + res
+	res = [f"Les coauteurs de {name} sont les suivants:" + "<br/>"]
+	try:
+		for child in root:
+			if len(child):
+				for data in child: #Boucle permettant de vérifier que la donnée n'est pas vide
+					if data.text != None and name in data.text:
+						coauthor = ""
+						for i in range(len(child)):
+							coauthor = dumps([(child[i].tag + " : " +child[i].text)])+ "<br/>"
+							if name != child[i].text and "author" == child[i].tag and coauthor not in res:
+								print(child[i].text)
+								res.append(coauthor)
+	except Exception as exc: #Capture les erreurs inattendues
+		print("An error occurred: ", exc)
+		redirect("/error/403/" + f"An error occurred: " + exc)
+	return res
 
 @route("/search/authors/<searchString>")
 def search_aut(searchString):
@@ -108,15 +145,19 @@ def search_aut(searchString):
 	"""
 	res = ""
 	list_author = [] #Evite d'avoir des répétitions
-	for child in root:
-		if len(child):
-			for data in child: #Boucle permettant de vérifier que la donnée n'est pas vide
-				if data.text != None and searchString in data.text:
-					for i in range(len(child)):
-						if "author" == child[i].tag and child[i].text != None and (searchString in child[i].text or searchString.upper() in child[i].text) and child[i].text not in list_author:
-							print(child[i].text)
-							list_author.append(child[i].text)
-							res = res + dumps([(child[i].tag +" : " +child[i].text)])+ "<br/>"
+	try:
+		for child in root:
+			if len(child):
+				for data in child: #Boucle permettant de vérifier que la donnée n'est pas vide
+					if data.text != None and searchString in data.text:
+						for i in range(len(child)):
+							if "author" == child[i].tag and child[i].text != None and (searchString in child[i].text or searchString.upper() in child[i].text) and child[i].text not in list_author:
+								print(child[i].text)
+								list_author.append(child[i].text)
+								res = res + dumps([(child[i].tag +" : " +child[i].text)])+ "<br/>"
+	except Exception as exc: #Capture les erreurs inattendues
+		print("An error occurred: ", exc)
+		redirect("/error/403/" + f"An error occurred: " + exc)
 	return f"Liste des auteurs contenant {searchString}: " + "<br/>" + res
 
 @route("/search/publications/<searchString>")
@@ -127,46 +168,55 @@ def search_pub(searchString):
 	param = request.query.get("filter") #Recherche des paramètres disponibles s'il y en a
 	existsParam = False #Indique la présence de paramètre
 	options = [] #Contient tout les paramètres
-	if param is None: #Vérifie s'il y a un argument
-		print("no arg")
-	else:
-		existsParam = True
-	
-	if existsParam:
-		for f in param.split(','):
-			print(f.split(':'))
-			options.append(f.split(':'))
-	for child in root:
-		if len(child):
-			for data in child: #Boucle permettant de vérifier que la donnée n'est pas vide
-				if data.text != None and searchString in data.text:
-					found = False #Indique si la chaine de caractères et les options ont été trouvées.
-					for i in range(len(child)):
-						if "title" == child[i].tag and searchString in child[i].text:
-							found = True
-							break
-					if found:
-						tmp = "" #Stocke les informations temporairement
-						for op in options:
-							found = False #Un titre contenant searchString est trouvé, on réinitialise found pour trouver les options.
-							for i in range(len(child)):
-								if op[0] == child[i].tag and child[i].text != None and op[1] in child[i].text:
-									print(child[i].text)
-									#res = res + dumps([(child[i].tag +" : " +child[i].text)])+ "<br/>"
-									tmp = tmp + dumps([(child[i].tag +" : " +child[i].text)])+ "<br/>"
-									found = True
-									break
-							if not found: #Si l'option n'a pas été trouvée, alors on quitte la boucle puisque ce n'est pas la bonne publication
+	try:
+		if param is None: #Vérifie s'il y a un argument
+			print("no arg")
+		else:
+			existsParam = True
+		
+		if existsParam:
+			for f in param.split(','):
+				print(f.split(':'))
+				options.append(f.split(':'))
+		for child in root:
+			if len(child):
+				for data in child: #Boucle permettant de vérifier que la donnée n'est pas vide
+					if data.text != None and searchString in data.text:
+						found = False #Indique si la chaine de caractères et les options ont été trouvées.
+						for i in range(len(child)):
+							if "title" == child[i].tag and searchString in child[i].text:
+								found = True
 								break
-						if found:
-							print("Publication trouvée!")
-							res += tmp
-							res += "<br/>"
+						if existsParam and found:
+							tmp = "" #Stocke les informations temporairement
+							for op in options:
+								found = False #Un titre contenant searchString est trouvé, on réinitialise found pour trouver les options.
+								for i in range(len(child)):
+									if op[0] == child[i].tag and child[i].text != None and op[1] in child[i].text:
+										print(child[i].text)
+										#res = res + dumps([(child[i].tag +" : " +child[i].text)])+ "<br/>"
+										tmp = tmp + dumps([(child[i].tag +" : " +child[i].text)])+ "<br/>"
+										found = True
+										break
+								if not found: #Si l'option n'a pas été trouvée, alors on quitte la boucle puisque ce n'est pas la bonne publication
+									break
+							if found:
+								print("Publication trouvée!")
+								res += tmp
+								res += "<br/>"
+						else:
+							for i in range(len(child)):
+								if 'title' == child[i].tag and child[i].text != None and searchString in child[i].text:
+									print(child[i].text)
+									res = res + dumps([(child[i].tag +" : " +child[i].text)])+ "<br/>"
+	except Exception as exc: #Capture les erreurs inattendues
+		print("An error occurred: ", exc)
+		redirect("/error/403/" + f"An error occurred: " + exc)
 	return f"Liste des publications contenant {searchString}: " + "<br/>" + res
 
-@route("/error/<msg>")
-def error(msg):
-	abort(401, msg)
+@route("/error/<code:int>/<msg>")
+def error(code, msg):
+	abort(code, msg)
 
 
 run(host='localhost', port=8080)
