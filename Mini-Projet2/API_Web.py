@@ -28,14 +28,14 @@ def publications(id):
 		redirect("/error/403/" + f"{id} is not between 1 or more and the id must be an integer, try again.")
 	for child in root:
 		if nb_pub == id-1:
-			i = 0
+			n = 0
 			for i in range(len(child)):
-				if child[i].tag in res: #Gère les cas lorsqu'il y a plusieurs clés
-					res[child[i].tag + str(i)] = child[i].text
-					i += 1
+				if child[i].tag in res: #Gère les cas lorsqu'il y a plusieurs clés similaires
+					res[child[i].tag + str(n)] = child[i].text
+					n += 1
 				else:
 					res[child[i].tag] = child[i].text
-					i = 0
+					n = 0
 			return res
 		else:
 			nb_pub += 1
@@ -112,7 +112,7 @@ def authors(name):
 		print("An error occurred: ", exc)
 		redirect("/error/403/" + f"An error occurred: " + str(exc))
 	print("Liste des coauteurs:\n", res)
-	return {'data':{'publications':estCoauteur,'Coauteurs':len(res)}}
+	return {'data':{'Publications':estCoauteur,'Coauteurs':len(res)}}
 	
 @route("/authors/<name>/publications")
 def auth_pub(name):
@@ -124,15 +124,15 @@ def auth_pub(name):
 		for child in root:
 			pub = {}
 			isAuthor = False
-			i = 0
+			n = 0
 			for data in child:
 				if data.text is not None:
-					if data.tag in pub: #Gère les cas lorsqu'il y a plusieurs clés
-						pub[data.tag + str(i)] = data.text
-						i += 1
+					if data.tag in pub: #Gère les cas lorsqu'il y a plusieurs clés similaires
+						pub[data.tag + str(n)] = data.text
+						n += 1
 					else:
 						pub[data.tag] = data.text	
-						i = 0
+						n = 0
 					if not isAuthor and 'author' == data.tag and name == data.text:
 						isAuthor = True
 			if isAuthor:
@@ -186,7 +186,6 @@ def search_authors(searchString):
 	"""
 	res = []
 	i = 0 #Iterator
-	cpt = 0 #Compte le nombre d'auteurs à retourner si isCounting vaut True
 	min = 0
 	isFull = False #Booléen qui indique si la liste d'auteurs a atteint le maximum
 	isCounting = False #Active le compteur cpt qui compte le nombre d'auteurs ajoutés dans la liste
@@ -229,7 +228,7 @@ def search_authors(searchString):
 							i += 1
 						elif  i >= max: #Le nombre d'auteurs a retourner en résultat est au maximum
 							isFull = True
-						elif isCounting and cpt == int(param_count):
+						elif isCounting and len(res) == int(param_count):
 							isFull = True
 						elif len(res) < max-min:
 							print(author)
@@ -246,7 +245,8 @@ def search_authors(searchString):
 		redirect("/error/403/" + f"An error occurred: " + str(exc))
 	print("Nombre d'auteurs trouvés: ", len(res))
 	if param_order == "author":
-		res.sort()
+		res_ordered=sorted(res, key=lambda x: x["author"])
+		return {'data':res_ordered}
 	return {'data':res}
 
 @route("/search/publications/<searchString>")
@@ -255,9 +255,12 @@ def search_pub(searchString):
 	La fonction retourne une liste de publications contenant searchString en titre.
 	Un paramètre filter permet de faire une recherche plus précise.
 	"""
-	res = [f"Liste des publications contenant {searchString}: " + "<br/>"] #Liste des publications
+	res = [] #Liste des publications
+	i = 0 #Iterator
+	min = 0
 	filter_list = [] #Liste des filtres
 	isFilter = False
+	isCounting = False #Active le compteur cpt qui compte le nombre d'auteurs ajoutés dans la liste
 	
 	param_filter = request.query.get("filter")
 	param_start = request.query.get("start")
@@ -281,31 +284,115 @@ def search_pub(searchString):
 			redirect("/error/403/" + f"An error occurred: Filter wrong format! key:value")
 		else:
 			print("Filter is activated\n")
-				
+	if param_start is None:
+		print("Start parameter not enabled\n")
+	else:
+		if not param_start.isnumeric() or int(param_start) < 0:
+			print("Start parameter not enabled: Value below 0\n")
+			redirect("/error/403/" + "An error occurred: start value is below 0! Must be a number, integer between 0 or more")
+		else:
+			min = int(param_start)
+			print(f"Start parameter enabled, starting at {min}\n")
+	
+	if param_count is None:
+		print("Count parameter not enabled\n")
+	else:
+		if not param_count.isnumeric() or int(param_count) < 0:
+			print("Count parameter not enabled: Value below 0\n")
+			redirect("/error/403/" + "An error occurred: count value is below 0! Must be a number, integer between 0 or more")
+		else:
+			print(f"Count parameter enabled, retrieving {param_count} values\n")
+			isCounting = True
+	
+	if searchString == '*':
+		searchString = '' #Vide donc on récupère tout les auteurs
+	max = 100+min
+	
 	try:
 		for child in root:
-			title = ''
+			"""if min > i:
+				i += 1
+			elif (isCounting and len(res) >= cpt) or (len(res) >= max-min):
+				break
+			else:"""
 			cpt_filter = 0 #Compte le nombre de filtre
 			titleExists = False
+			dict_res = {} #Ne pas utiliser clear() pour vider!
+			n = 0
 			for data in child:
-				if "title" == data.tag and data.text is not None and searchString in data.text:
-					title = dumps(data.text) + "<br/>"
-					titleExists = True
-				if isFilter:
-					for f in filter_list:
-						if f[0] == data.tag and data.text is not None and f[1] in data.text:
-							cpt_filter += 1
-				elif titleExists:
-					print(f"{title} found!\n")
-					res.append(title)
+				if data.text is not None:
+					if data.tag in dict_res: #Cas lorsqu'il a plusieurs clés similaires
+						dict_res[data.tag + str(n)] = data.text
+						n += 1
+					else:
+						dict_res[data.tag] = data.text
+						n = 0
+					if "title" == data.tag and searchString in data.text:
+						titleExists = True
 			
-			if isFilter and cpt_filter >= len(filter_list) and titleExists and title not in res:
-				print(f"{title} found!\n")
-				res.append(title)
+			if titleExists and not isFilter and dict_res not in res: #Cas si le filtre n'est pas activé
+				if min > i:
+					i += 1
+				elif i >= max or (isCounting and len(res) >= int(param_count)) or len(res) >= max-min:
+					break
+				else:
+					print(f"{dict_res} added with filters\n")
+					res.append(dict_res)
+			elif titleExists and isFilter and dict_res not in res:
+				for data in child:
+					if data.text is not None:
+						for f in filter_list:
+							if f[0] == data.tag and f[1] in data.text:
+								cpt_filter += 1
+					
+				if isFilter and cpt_filter >= len(filter_list) and titleExists: #Cas si le filtre est activé et valable
+					if min > i:
+						i += 1
+					elif i >= max or (isCounting and len(res) >= int(param_count)) or len(res) >= max-min:
+						break
+					else:
+						print(f"{dict_res} added with filters\n")
+						res.append(dict_res)
 	except Exception as exc: #Capture les erreurs inattendues
 		print("An error occurred: ", exc)
 		redirect("/error/403/" + f"An error occurred: " + str(exc))
-	return res
+	
+	#Gère les clés et l'ordre
+	keyExists = False
+	isInteger = True
+	if param_order:
+		for r in res:
+			if param_order in r:
+				print(f'{param_order} exists\n')
+				keyExists = True
+				break
+	
+	if keyExists:
+		tmp = []
+		for r in res: #Boucle permettant de vérifier si la clé existe et si c'est un entier
+			if param_order in r:
+				tmp.append(r)
+				if isInteger:
+					try:
+						if int(r[param_order]):
+							continue
+					except ValueError as exc:
+						isInteger = False
+						print(f'{param_order} is not an integer\n')
+		if len(tmp) > 0:
+			if isInteger:
+				print(f"{param_order} is an integer\n")
+				res_ordered=sorted(tmp, key=lambda x: int(x[param_order]))
+			else:
+				res_ordered=sorted(tmp, key=lambda x: x[param_order])
+			for r in res:
+				if r not in res_ordered:
+					res_ordered.append(r) #Les cas qui ne peuvent pas être ordonné sont à la fin de la liste
+			return {'data':res_ordered}
+		redirect("/error/403/" + f"data with order is not working: Empty list")
+	else:
+		print("data without key\n")
+		return {'data':res}
 
 @route("/authors/<name_origin>/distance/<name_destination>")
 def authors_distance(name_origin, name_destination):
