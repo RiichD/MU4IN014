@@ -9,19 +9,27 @@ server_port = 8080
 def input():
 	return '''
 	<form action="/input" method="post">
+	GATHERING INFORMATION: <br/>
 	Word: <input name="author_data" type="text" /> <br/>
 	Start: <input name="start_data" type="text" /> <br/>
 	Count: <input name="count_data" type="text" /> <br/>
 	Order: <input name="order_data" type="text" /> <br/>
-	filter: <input name="filter_data" type="text" /> <br/>
+	filter: <input name="filter_data" type="text" /> <br/><br/>
 	<input name="f_publications" value="find publications" type="submit" />
 	<input name="f_coauthors" value="find coauthors" type="submit" /> <br/>
 	<input name="f_search_publications" value="search publications" type="submit" />
+	
+	<br/><br/>
+	SEARCHING DISTANCE FOR:<br/>
+	Author source: <input name="author_source" type="text" /> <br/>
+	Author destination: <input name="author_destination" type="text" /> <br/>
+	<input name="f_distance" value="search distance" type="submit" />
 	</form>
 	'''
 	
 @route("/input", method='POST')
 def do_input():
+	# Gather information
 	data = request.forms.getunicode("author_data")
 	start = request.forms.getunicode("start_data")
 	count = request.forms.getunicode("count_data")
@@ -32,7 +40,11 @@ def do_input():
 	find_co = request.forms.get('f_coauthors')
 	find_search_pub = request.forms.get('f_search_publications')
 	
-	print(f"GET:{data}, buttons: find_pub:{find_pub}, find_co:{find_co}, find_search_pub:{find_search_pub}, start:{start}, count:{count}, order:{order}, filter:{filter}")
+	# Searching distance
+	author_src = request.forms.getunicode("author_source")
+	author_dest = request.forms.getunicode("author_destination")
+	find_distance = request.forms.get('f_distance')
+	
 	r = ""
 	l = "No data found"
 	
@@ -58,6 +70,7 @@ def do_input():
 		else:
 			options += f"?order={order}"
 	
+	print(f"GET:{data}, buttons: find_pub:{find_pub}, find_co:{find_co}, find_search_pub:{find_search_pub}, start:{start}, count:{count}, order:{order}, filter:{filter}\n distance:{find_distance}, author_src:{author_src}, author_dest:{author_dest}")
 	if find_pub:
 		print(f"Checking publications for {data}\n")
 		r = get(f"http://{server_ip}:{server_port}/authors/{data}/publications{options}")
@@ -73,6 +86,10 @@ def do_input():
 				options += f"?filter={filter}"
 		print(f"Searching publications about {data}\n")
 		r = get(f"http://{server_ip}:{server_port}/search/publications/{data}{options}")
+	elif find_distance:
+		print(f"Searching distance\n")
+		r = get(f"http://{server_ip}:{server_port}/authors/{author_src}/distance/{author_dest}")
+		
 	if r != '':
 		l = loads(r.text)
 	return l
