@@ -233,7 +233,6 @@ def search_authors(searchString):
 						elif len(res) < max-min:
 							print(author)
 							res.append(author)
-							cpt += 1
 						else:
 							isFull = True
 				if isFull:
