@@ -92,7 +92,7 @@ def authors(name):
 			isCoauthor = False
 			for data in child: #Boucle vérifiant si name est trouvé en tant qu'auteur
 				if 'author' == data.tag and data.text is not None and name == data.text:
-					print(f"{data.text} is an author")
+					#print(f"{data.text} is an author") #DEBUG
 					isAuthor = True
 					break
 			
@@ -104,7 +104,7 @@ def authors(name):
 						if name != data.text:
 							isCoauthor = True
 							if author not in res:
-								print(data.text+" is a coauthor")
+								#print(data.text+" is a coauthor") #DEBUG
 								res.append(author)
 					else:
 						break
@@ -113,7 +113,7 @@ def authors(name):
 	except Exception as exc: #Capture les erreurs inattendues
 		print("An error occurred: ", exc)
 		redirect("/error/403/" + f"An error occurred: " + str(exc))
-	print("Liste des coauteurs:\n", res)
+	print(f"Coauteur {estCoauteur} fois, nombre de coauteurs: {len(res)}\n", res)
 	return {'data':{'Publications':estCoauteur,'Coauteurs':len(res)}}
 	
 @route("/authors/<name>/publications")
@@ -173,7 +173,7 @@ def auth_pub(name):
 				elif isCounting and len(res) >= int(param_count):
 					break
 				elif len(res) < max-min:
-					print(f"{name} is an author of {pub}\n")
+					#print(f"{name} is an author of {pub}\n") #DEBUG
 					res.append(pub)
 	except Exception as exc: #Capture les erreurs inattendues
 		print("An error occurred: ", exc)
