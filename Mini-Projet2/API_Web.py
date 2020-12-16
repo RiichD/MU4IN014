@@ -359,7 +359,8 @@ def search_authors(searchString):
 @route("/search/publications/<searchString>")
 def search_pub(searchString):
 	"""
-	La fonction retourne une liste de publications contenant searchString en titre.
+	La fonction retourne un dictionnaire contenant la liste de publications.
+	Le titre de la publication doit contenir searchString en titre et est stocké dans un dictionnaire.
 	Un paramètre filter permet de faire une recherche plus précise.
 	"""
 	res = [] #Liste des publications
@@ -505,9 +506,40 @@ def search_pub(searchString):
 def authors_distance(name_origin, name_destination):
 	"""
 	La fonction retourne la distance entre name_origin et name_destination.
-	Je précise que je n'ai pas très bien compris quelle est la distance ici.
 	"""
-	return 0
+	distance = -1 #-1 signifie qu'il y a une erreur
+	path = [] #Chemin le plus court
+	tmp_path = [] #Chemin temporaire
+	if name_origin == name_destination: #Pas de recherche pour le même auteur
+		return {'Distance':0, 'Path':'SELF'}
+	try:
+		for child in root:
+			author = {}
+			isAuthor = False
+			isCoauthor = False
+			for data in child:
+				if data.text is not None:
+					if data.tag == 'author':
+						tmp_path.append(data.text) #Contient le chemin
+						if name_origin in tmp_path:
+							isAuthor = True
+						if name_destination in tmp_path:
+							isCoauthor = True
+						if isAuthor and isCoauthor: #Les deux auteurs sont trouvés
+							print(tmp_path)
+							if distance == -1 or (distance > len(tmp_path)-1): #Vérifie que la distance est inférieure s'il existe une distance trouvée auparavant
+								path.clear()
+								for t in tmp_path:
+									path.append(t)
+								distance = len(path)-1
+							break
+			tmp_path.clear()
+	except Exception as exc: #Capture les erreurs inattendues
+		print("An error occurred: ", exc)
+		redirect("/error/403/" + f"An error occurred: " + str(exc))
+	if distance == -1: #Aucune distance trouvée
+		return {'Distance':distance, 'Path':'No path found'}
+	return {'Distance':distance, 'Path':path}
 
 @route("/error/<code:int>/<msg>")
 def error(code, msg):
