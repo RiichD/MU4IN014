@@ -55,6 +55,8 @@ def publications():
 	if param is not None: #Vérifie s'il y a un argument
 		try:
 			limit = int(param)
+			if limit < 1:
+				redirect("/error/403/" + f"{param} must be an integer above 0, try again.")
 		except ValueError as exc:
 			redirect("/error/403/" + f"{param} is not a number, try again.")
 	for child in root:
@@ -213,7 +215,7 @@ def auth_pub(name):
 
 
 @route("/authors/<name>/coauthors")
-def auth_pub(name):
+def auth_coauthor(name):
 	"""
 	La fonction retourne tout les coauteurs de name sous la forme d'un dictionnaire de la liste de coauteurs.
 	Les données sont stockées sous forme de dictionnaire.
