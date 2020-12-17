@@ -39,7 +39,7 @@ def publications(id):
 			return res
 		else:
 			nb_pub += 1
-	redirect("/error/404/"+"Page not found") #Erreur s'il n'y a aucune publication
+	return {'data':res}
 
 @route("/publications")
 def publications():
@@ -76,7 +76,7 @@ def publications():
 			res.append(tmp)
 		if len(res) == limit:
 			return {'data':res}
-	redirect("/error/404/"+"Page not found")
+	return {'data':res}
 
 @route("/authors/<name>")
 def authors(name):
