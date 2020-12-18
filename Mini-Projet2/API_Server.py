@@ -499,7 +499,8 @@ def search_pub(searchString):
 				if r not in res_ordered:
 					res_ordered.append(r) #Les cas qui ne peuvent pas être ordonné sont à la fin de la liste
 			return {'data':res_ordered}
-		redirect("/error/403/" + f"data with order is not working: Empty list")
+		print("Ordering data error\n")
+		return {'data':res} #redirect("/error/403/" + f"data with order is not working: Empty list")
 	else:
 		print("data without key\n")
 		return {'data':res}
