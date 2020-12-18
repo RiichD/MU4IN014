@@ -64,7 +64,7 @@ def do_input():
 		else:
 			options += f"?count={count}"
 	if order is not None and order != "":
-		isFiltering = True
+		isOrdering = True
 		if isStarting or isCounting:
 			options += f"&order={order}"
 		else:
